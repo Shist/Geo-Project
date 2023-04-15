@@ -32,4 +32,130 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.main .main__wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 0;
+  margin-inline: auto;
+}
+
+.main {
+  font-family: "Roboto";
+  background-color: D9D9D9;
+}
+.main .main__global-container-title {
+  background-image: url(../../images/works/bg-drilling.png);
+  width: 100%;
+  min-height: 419px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 102px;
+}
+.main .main__global-container-title .main__global-container-title-text {
+  max-width: 813px;
+  width: 100%;
+  min-height: 63px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+}
+.main .title-heading {
+  max-width: 892px;
+  margin-bottom: 31px;
+  font-family: "$font";
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 55px;
+  text-align: center;
+  color: white;
+}
+.main .main__wrapper .main__wrapper-common {
+  display: flex;
+}
+.main .main__wrapper .main__wrapper-common .main__wrapper-common-picture {
+  margin-right: 47px;
+}
+.main .main__wrapper .main__wrapper-common .main__wrapper-common-text-paragrph {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  margin-top: 20px;
+}
+.main .main__wrapper .main__wrapper-minerals-title {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  color: #141414;
+}
+.main .main__wrapper .main__wrapper-common-text-paragrph {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  margin-bottom: 20px;
+}
+.main .main__wrapper-common-best {
+  max-width: 1420px;
+  min-height: 98px;
+  display: flex;
+}
+.main .main__wrapper-common-best .main__wrapper-common-best-item {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-bottom: 50px;
+}
+.main .main__wrapper-common-best .main__wrapper-common-best-item .main__wrapper-common-best-item-picture {
+  margin-right: 15px;
+}
+.main .main__wrapper-common-best .main__wrapper-common-best-item .main__wrapper-common-best-item-text {
+  display: flex;
+  flex-direction: column;
+}
+.main .common-text-heading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: #102441;
+}
+.main .title-best {
+  max-width: 181;
+  min-height: 38px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  color: #203e75;
+}
+.main .text-best {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #405267;
+  max-width: 306px;
+  width: 100%;
+  min-height: 57px;
+}
+.main .main__wrapper-certificates-common {
+  max-width: 513px;
+  min-height: 91px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=works.css.map */
