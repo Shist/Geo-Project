@@ -32,4 +32,120 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.default-wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 0;
+  margin-inline: auto;
+}
+
+.global-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__services {
+  font-family: "Roboto";
+  min-height: 420px;
+  background-image: url(/assets/images/services/bg-machines.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__services .main__services-title {
+  font-weight: 700;
+  font-size: 58px;
+  text-align: center;
+  color: white;
+  padding: 107px 0 31px 0;
+}
+.main__services .main__services-title-text {
+  margin-inline: auto;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  max-width: 892px;
+  text-align: center;
+}
+
+.default-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main__drilling-work {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 50%;
+}
+
+.main__drilling-work2 {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  background-image: url(/assets/images/services/crystal-background.png);
+}
+.main__drilling-work2 img {
+  padding: 80px 0px;
+}
+
+.main__drilling-work-foto img {
+  padding: 80px 60px 80px 40px;
+}
+
+.main__drilling-work-foto2 img {
+  padding: 80px 0px;
+}
+
+.main__drilling-work-inform-text {
+  width: 790px;
+  padding: 80px 0px 0px 0px;
+}
+
+.main__drilling-work-inform-text2 {
+  padding: 80px 60px 0px 0px;
+  width: 790px;
+}
+
+.main__drilling-work-inform-text-h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: #102441;
+  padding-bottom: 15px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  padding-bottom: 30px;
+}
+
+.main__drilling-work-inform-bt .main__drilling-work-inform-bt-btn {
+  max-width: 237px;
+  width: 100%;
+  padding-block: 19px 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: #203e75;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main__drilling-work-inform-bt .main__drilling-work-inform-bt-btn:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=services.css.map */
