@@ -18,12 +18,29 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (max-width: 480px) {
+    min-height: 0;
+  }
   .main__services-title {
     font-weight: 700;
     font-size: 58px;
     text-align: center;
     color: $text-light-color;
     padding: 107px 0 31px 0;
+    @media (max-width: 1024px) {
+      padding: 77px 0 51px 0;
+    }
+    @media (max-width: 864px) {
+      font-size: 45px;
+    }
+    @media (max-width: 480px) {
+      font-size: 35px;
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+    @media (max-width: 360px) {
+      font-size: 25px;
+    }
   }
   .main__services-title-text {
     margin-inline: auto;
@@ -34,6 +51,21 @@
       font-size: 30px;
       line-height: 45px;
       max-width: none;
+    }
+    @media (max-width: 1024px) {
+      line-height: 35px;
+    }
+    @media (max-width: 864px) {
+      line-height: 30px;
+      font-size: 25px;
+    }
+    @media (max-width: 480px) {
+      font-size: 20px;
+      padding-bottom: 30px;
+    }
+    @media (max-width: 360px) {
+      font-size: 15px;
+      line-height: 18px;
     }
   }
 }
@@ -71,6 +103,12 @@
       padding: 40px;
       padding-top: 60px;
     }
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+    @media (max-width: 480px) {
+      padding: 10px;
+    }
   }
 }
 .main__drilling-work-foto2 {
@@ -81,6 +119,12 @@
     padding: 80px 0px;
     @media (max-width: 1400px) {
       padding: 40px;
+    }
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+    @media (max-width: 480px) {
+      padding: 10px;
     }
   }
 }
@@ -108,20 +152,158 @@
   @media (max-width: 1400px) {
     padding: 0 40px 30px 40px;
   }
+  @media (max-width: 864px) {
+    font-size: 40px;
+  }
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 0 10px 0;
+    font-size: 25px;
+  }
+  @media (max-width: 360px) {
+    font-size: 20px;
+    padding: 0;
+  }
+  @media (max-width: 320px) {
+    font-size: 18px;
+    line-height: 35px;
+  }
 }
-p {
+.main__drilling-work-inform-text-p {
   @include default-p($text-blue-color);
   padding-bottom: 30px;
   @media (max-width: 1400px) {
     padding: 0 40px 30px 40px;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 .main__drilling-work-inform-bt {
   @media (max-width: 1400px) {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 480px) {
+    padding-bottom: 15px;
+  }
+  @media (max-width: 360px) {
+    padding-bottom: 5px;
   }
   .main__drilling-work-inform-bt-btn {
     @include default-btn(237px, $text-light-color, $btn-link-dark-color, 0px);
+    @media (max-width: 480px) {
+      padding-block: 8px 8px;
+      max-width: 200px;
+      line-height: 20px;
+    }
+    @media (max-width: 360px) {
+      font-size: small;
+    }
+  }
+}
+.footer {
+  background-color: $footer-bg-color;
+  min-height: 480px;
+  @include default-p(white);
+  &__container {
+    @extend %default-wrapper;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__wr-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 388px;
+    @media (max-width: $pc-s) {
+      flex-direction: column;
+      text-align: center;
+      min-height: 900px;
+      justify-content: space-between;
+    }
+  }
+  &__wr-info {
+    img {
+      margin-bottom: 20px;
+      @media (max-width: $pc-s) {
+        padding-top: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    .footer__text {
+      max-width: 456px;
+      font-size: 18px;
+    }
+  }
+  &__link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 222px;
+    @media (max-width: $pc-s) {
+      justify-content: start;
+      min-height: min-content;
+    }
+    .footer__link-title {
+      font-size: 22px;
+      font-weight: 700;
+      @media (max-width: $pc-s) {
+        margin-bottom: 20px;
+      }
+    }
+    .footer__link {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .footer__address {
+      max-width: 366px;
+      font-size: 18px;
+      line-height: 24px;
+      @media (max-width: $pc-s) {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    }
+    .footer__number {
+      max-width: 210px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $pc-s) {
+        align-self: center;
+        margin-bottom: 10px;
+      }
+    }
+    .footer__icons {
+      max-width: 115px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $pc-s) {
+        align-self: center;
+      }
+      img {
+        @media (max-width: $pc-s) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__copyright {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1170px;
+    border-top: 1px solid #353535;
+    padding-top: 26px;
+    .footer__copyright-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
