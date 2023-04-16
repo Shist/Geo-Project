@@ -21,6 +21,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 102px;
+    @media (max-width: $laptop-l) {
+      background-position: center;
+      margin-bottom: 42px;
+    }
 
     .main__global-container-title-text {
       max-width: 813px;
@@ -28,6 +32,10 @@
       min-height: 63px;
       @include default-p($text-light-color);
       text-align: center;
+      @media (max-width: $tablet-l) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .title-heading {
@@ -39,6 +47,10 @@
     line-height: 55px;
     text-align: center;
     color: $text-light-color;
+    @media (max-width: $tablet-l) {
+      font-size: 38px;
+      line-height: 35px;
+    }
   }
   .main__wrapper {
     @extend %default-wrapper;
@@ -47,9 +59,23 @@
       @media (max-width: $pc-m) {
         margin-left: 20px;
         margin-right: 20px;
+        width: 100%;
+
+        @media (max-width: $laptop-l) {
+          min-height: 439px;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+        }
       }
       .main__wrapper-common-picture {
         margin-right: 47px;
+        @media (max-width: $laptop-l) {
+          width: 30%;
+        }
+        @media (max-width: $phone-l) {
+          display: none;
+        }
       }
       .main__wrapper-common-text-paragrph {
         @include default-p($text-blue-color);
@@ -66,6 +92,9 @@
       @media (max-width: $pc-m) {
         margin-left: 20px;
         margin-right: 20px;
+      }
+      @media (max-width: $phone-l) {
+        margin-top: 20px;
       }
     }
     .main__wrapper-common-text-paragrph {
@@ -85,13 +114,24 @@
       margin-left: 20px;
       margin-right: 20px;
     }
+    @media (max-width: $phone-m) {
+      flex-wrap: wrap;
+    }
     .main__wrapper-common-best-item {
       display: flex;
       justify-content: start;
       align-items: start;
       margin-bottom: 50px;
+      @media (max-width: $phone-l) {
+        margin-bottom: 10px;
+      }
+   
+
       .main__wrapper-common-best-item-picture {
         margin-right: 15px;
+      }
+      @media (max-width: $phone-l) {
+        flex-wrap: wrap;
       }
 
       .main__wrapper-common-best-item-text {
@@ -102,6 +142,10 @@
   }
   .common-text-heading {
     @include default-h($text-dark-color);
+    @media (max-width: $tablet-l) {
+      font-size: 35px;
+      line-height: 32px;
+    }
   }
   .title-best {
     max-width: 181;
@@ -139,6 +183,11 @@
       text-align: center;
       margin-top: 100px;
       margin-bottom: 20px;
+      @media (max-width: $phone-l) {
+        margin-top: 30px;
+        min-height: 41px;
+        margin-bottom: 5px;
+      }
     }
   }
   .main__wrapper-common-why {
@@ -149,10 +198,36 @@
     @media (max-width: $pc-m) {
       margin-left: 20px;
       margin-right: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .main__wrapper-common-why-picture {
+      @media (max-width: $laptop-l) {
+        width: 70%;
+      }
+      @media (max-width: $phone-l) {
+        display: none;
+        width: 100%;
+      }
+      .main__wrapper-common-why-pic {
+        @media (max-width: $laptop-l) {
+          width: 70%;
+        }
+        @media (max-width: $phone-l) {
+          display: none;
+          width: 100%;
+        }
+      }
     }
     .main__wrapper-common-why-text {
       margin-top: 55px;
       width: 50%;
+      @media (max-width: $laptop-l) {
+        width: 50%;
+      }
+      @media (max-width: $phone-l) {
+        margin-top: 10px;
+      }
       .common-text-heading {
         margin-bottom: 44px;
       }
@@ -194,6 +269,9 @@
     .common-text-heading {
       padding-top: 110px;
       margin-bottom: 39px;
+      @media (max-width: $phone-l) {
+        padding-top: 5px;
+      }
     }
     .main__wrapper-projecting {
       display: flex;
@@ -203,7 +281,19 @@
         flex-wrap: wrap;
         justify-content: space-around;
       }
-
+      @media (max-width: $phone-l) {
+        margin-bottom: 20px;
+      }
+      .main__wrapper-projecting-item {
+        @media (max-width: $phone-l) {
+          width: 300px;
+        }
+        .main__wrapper-projecting-item-img {
+          @media (max-width: $phone-l) {
+            width: 300px;
+          }
+        }
+      }
       .main__wrapper-projecting-item-text {
         background-color: white;
         max-width: 508px;
