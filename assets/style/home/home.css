@@ -32,4 +32,40 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.global-container__prices-wrapper .global-container__prices-container {
+  max-width: 1600px;
+  width: 100%;
+  margin-top: 0;
+  margin-inline: auto;
+}
+
+.ore-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ore-price-wrapper__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+.ore-price-wrapper__text_green {
+  color: #28df71;
+}
+.ore-price-wrapper__text_red {
+  color: #e01e3c;
+}
+
+.global-container__prices-wrapper {
+  background: #12161c;
+}
+.global-container__prices-wrapper .global-container__prices-container {
+  padding-block: 15px;
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 112px;
+       column-gap: 112px;
 }/*# sourceMappingURL=home.css.map */

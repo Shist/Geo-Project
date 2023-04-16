@@ -3,4 +3,36 @@
 @import "../globalStyle/header";
 @import "../globalStyle/maps";
 @import "../globalStyle/footer";
-// ПАША
+
+// Author: Pasha
+
+.ore-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $text-light-color;
+    &_green {
+      color: $price-green-color;
+    }
+    &_red {
+      color: $price-red-color;
+    }
+  }
+}
+
+.global-container {
+  &__prices-wrapper {
+    background: #12161c;
+    .global-container__prices-container {
+      @extend %default-wrapper;
+      padding-block: 15px;
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 112px;
+    }
+  }
+}
