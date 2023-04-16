@@ -1,0 +1,163 @@
+@import "./vars";
+@import "./template";
+
+// Author: Pavel
+
+.header {
+  background-image: url(../../images/global/header/bg.png);
+  background-size: cover;
+  &__container {
+    @extend %default-wrapper;
+    padding-block: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+      width: 164px;
+      height: 51px;
+      background-size: cover;
+    }
+    .header__burger-menu-btn {
+      width: 35px;
+      height: 35px;
+      background: url(../../images/global/header/burger-bar.png);
+      background-size: cover;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+    .header__nav-info-wrapper {
+      max-width: 940px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header__nav {
+        max-width: 560px;
+        width: 100%;
+        .header__nav-list {
+          display: flex;
+          justify-content: space-between;
+          .header__nav-list-item {
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.2);
+            }
+            &:active {
+              .header__link {
+                transition: 0s;
+                color: $link-active-color;
+              }
+            }
+            .header__link {
+              text-decoration: none;
+              font-family: $font;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              color: $text-light-color;
+              &_bold {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      .header__info-wrapper {
+        max-width: 332px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header__phone-wrapper {
+          display: flex;
+          justify-content: space-between;
+          .header__phone-keys-icon {
+            margin-right: 8px;
+            width: 21px;
+            height: 29px;
+          }
+          .header__phone-num-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .header__phone-num {
+              font-family: $font;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 17px;
+              color: $text-light-color;
+            }
+            .header__order-call {
+              font-family: $font;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 17px;
+              color: $text-light-color;
+              background: none;
+              border: none;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+        .header__white-vert-line {
+          width: 1px;
+          height: 17px;
+          background-color: $text-light-color;
+        }
+        .header__search-btn {
+          width: 16px;
+          height: 16px;
+          background: url(../../images/global/header/search-loupe.svg);
+          background-size: cover;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.5);
+          }
+        }
+        .header__language-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .header__language-flag-img {
+            width: 16px;
+            height: 16px;
+            margin-right: 9px;
+          }
+          .header__select-language-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .header__curr-language {
+              margin-right: 6px;
+              font-family: $font;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              color: $text-light-color;
+            }
+            .header__choose-language-btn {
+              width: 7px;
+              height: 4px;
+              background: url(../../images/global/header/arrow.svg);
+              background-size: cover;
+              border: none;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
