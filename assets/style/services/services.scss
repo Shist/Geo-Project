@@ -3,7 +3,8 @@
 @import "../globalStyle/header";
 @import "../globalStyle/maps";
 @import "../globalStyle/footer";
-// ОЛЯ
+
+// Author: Olga
 
 .global-container {
   max-width: 1920px;
@@ -14,7 +15,7 @@
   font-family: $font;
   min-height: 420px;
   background-image: url(/assets/images/services/bg-machines.png);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   .main__services-title {
@@ -24,12 +25,11 @@
     color: $text-light-color;
     padding: 107px 0 31px 0;
   }
-  .main__services-title-text{
+  .main__services-title-text {
     margin-inline: auto;
-    @include default-p($text-light-color);   
+    @include default-p($text-light-color);
     max-width: 892px;
     text-align: center;
-    
   }
 }
 .default-wrapper {
