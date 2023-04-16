@@ -455,7 +455,7 @@
 .main__services {
   font-family: "Roboto";
   min-height: 420px;
-  background-image: url(/assets/images/services/bg-machines.png);
+  background-image: url(../../images/services/bg-machines.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -493,7 +493,7 @@
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  background-image: url(/assets/images/services/crystal-background.png);
+  background-image: url(../../images/services/crystal-background.png);
 }
 .main__drilling-work2 img {
   padding: 80px 0px;
