@@ -30,17 +30,30 @@
     @include default-p($text-light-color);
     max-width: 892px;
     text-align: center;
+    @media (max-width: 1400px) {
+      font-size: 30px;
+      line-height: 45px;
+      max-width: none;
+    }
   }
 }
 .default-wrapper {
   @extend %default-wrapper;
   display: flex;
   justify-content: center;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
 }
 .main__drilling-work {
   display: flex;
   justify-content: space-between;
   flex: 0 1 50%;
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    justify-content: center;
+  }
 }
 .main__drilling-work2 {
   display: flex;
@@ -54,30 +67,60 @@
 .main__drilling-work-foto {
   img {
     padding: 80px 60px 80px 40px;
+    @media (max-width: 1400px) {
+      padding: 40px;
+      padding-top: 60px;
+    }
   }
 }
 .main__drilling-work-foto2 {
+  @media (max-width: 1400px) {
+    order: -1;
+  }
   img {
     padding: 80px 0px;
+    @media (max-width: 1400px) {
+      padding: 40px;
+    }
   }
 }
 .main__drilling-work-inform-text {
   width: 790px;
   padding: 80px 0px 0px 0px;
+  @media (max-width: 1400px) {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+  }
 }
 .main__drilling-work-inform-text2 {
   padding: 80px 60px 0px 0px;
   width: 790px;
+  @media (max-width: 1400px) {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 .main__drilling-work-inform-text-h2 {
   @include default-h($text-dark-color);
   padding-bottom: 15px;
+  @media (max-width: 1400px) {
+    padding: 0 40px 30px 40px;
+  }
 }
 p {
   @include default-p($text-blue-color);
   padding-bottom: 30px;
+  @media (max-width: 1400px) {
+    padding: 0 40px 30px 40px;
+  }
 }
 .main__drilling-work-inform-bt {
+  @media (max-width: 1400px) {
+    text-align: center;
+    padding-bottom: 10px;
+  }
   .main__drilling-work-inform-bt-btn {
     @include default-btn(237px, $text-light-color, $btn-link-dark-color, 0px);
   }
