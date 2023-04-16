@@ -12,6 +12,8 @@
 
   .main__global-container-title {
     background-image: url(../../images/works/bg-drilling.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     min-height: 419px;
     display: flex;
@@ -42,6 +44,10 @@
     @extend %default-wrapper;
     .main__wrapper-common {
       display: flex;
+      @media (max-width: $pc-m) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
       .main__wrapper-common-picture {
         margin-right: 47px;
       }
@@ -57,16 +63,28 @@
       font-size: 32px;
       line-height: 28px;
       color: $text-black-color;
+      @media (max-width: $pc-m) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
     .main__wrapper-common-text-paragrph {
       @include default-p($text-blue-color);
       margin-bottom: 20px;
+      @media (max-width: $pc-m) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
   }
   .main__wrapper-common-best {
     max-width: 1420px;
     min-height: 98px;
     display: flex;
+    @media (max-width: $pc-m) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     .main__wrapper-common-best-item {
       display: flex;
       justify-content: start;
@@ -107,6 +125,13 @@
   }
   .main__wrapper-certificates {
     margin-bottom: 46px;
+    .main__wrapper-certificates-picture {
+      @media (max-width: $pc-m) {
+        display: flex;
+        margin: 0 auto;
+        width: 70%;
+      }
+    }
     .main__wrapper-certificates-common {
       max-width: 513px;
       min-height: 91px;
@@ -121,6 +146,10 @@
     display: flex;
     width: 100%;
     margin-bottom: 35px;
+    @media (max-width: $pc-m) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
     .main__wrapper-common-why-text {
       margin-top: 55px;
       width: 50%;
@@ -149,6 +178,9 @@
     text-align: center;
     background-image: url(../../images/works/blue-crystal-background.png);
     min-height: 905px;
+    @media (max-width: $pc-m) {
+      margin-bottom: 40px;
+    }
     .main__link {
       background-color: $btn-link-dark-color;
       padding: 16px 54px 19px 55px;
@@ -167,6 +199,10 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 56px;
+      @media (max-width: $pc-m) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
       .main__wrapper-projecting-item-text {
         background-color: white;
