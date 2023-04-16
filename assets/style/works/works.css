@@ -557,7 +557,7 @@
   min-height: 57px;
 }
 .main .main__wrapper-certificates {
-  margin-bottom: 101px;
+  margin-bottom: 46px;
 }
 .main .main__wrapper-certificates .main__wrapper-certificates-common {
   max-width: 513px;
@@ -571,8 +571,10 @@
   min-height: 432px;
   display: flex;
   width: 100%;
+  margin-bottom: 35px;
 }
 .main .main__wrapper-common-why .main__wrapper-common-why-text {
+  margin-top: 55px;
   width: 50%;
 }
 .main .main__wrapper-common-why .main__wrapper-common-why-text .common-text-heading {
@@ -590,4 +592,75 @@
 }
 .main .main__wrapper-common-why .main__wrapper-common-why-text .main__wrapper-common-best-wrap .main__wrapper-common-best-item .main__wrapper-common-best-item-picture {
   margin-right: 15px;
+}
+.main .main__container-additional {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../../images/works/blue-crystal-background.png);
+  min-height: 905px;
+}
+.main .main__container-additional .main__container-additional-map {
+  min-height: 663px;
+  background-image: url(../../images/works/map.png);
+  margin-top: 95px;
+}
+.main .main__container-additional .main__link {
+  background-color: #203e75;
+  padding: 16px 54px 19px 55px;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+}
+.main .main__container-additional .common-text-heading {
+  padding-top: 110px;
+  margin-bottom: 39px;
+}
+.main .main__container-additional .main__wrapper-projecting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.main .main__container-additional .main__wrapper-projecting .main__wrapper-projecting-item-text {
+  background-color: white;
+  max-width: 508px;
+  min-height: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 32px;
+}
+.main .main__container-additional .main__wrapper-projecting .main__wrapper-projecting-item-text .main__wrapper-projecting-item-date {
+  background-color: #f1f4f8;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #405267;
+  margin: 20px 0 14px 0;
+}
+.main .main__container-additional .main__wrapper-projecting .main__wrapper-projecting-item-text .main__wrapper-projecting-item-heading {
+  max-width: 350px;
+  min-height: 66px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #141414;
+  text-align: start;
+}
+.main .main__container-additional .main__wrapper-projecting .main__wrapper-projecting-item-text .main__wrapper-projecting-item-content {
+  max-width: 460px;
+  min-height: 74px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #405267;
+  text-align: start;
 }/*# sourceMappingURL=works.css.map */
