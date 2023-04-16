@@ -105,12 +105,39 @@
     width: 100%;
     min-height: 57px;
   }
-  .main__wrapper-certificates-common{
-    max-width: 513px;
-    min-height: 91px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
+  .main__wrapper-certificates {
+    margin-bottom: 101px;
+    .main__wrapper-certificates-common {
+      max-width: 513px;
+      min-height: 91px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  .main__wrapper-common-why {
+    min-height: 432px;
+    display: flex;
+    width: 100%;
+    .main__wrapper-common-why-text {
+      width: 50%;
+      .common-text-heading{
+        margin-bottom: 44px;
+      }
+      .main__wrapper-common-best-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        .main__wrapper-common-best-item {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          margin-bottom: 50px;
+          .main__wrapper-common-best-item-picture {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
   }
 }
