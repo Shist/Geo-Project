@@ -149,11 +149,6 @@
     text-align: center;
     background-image: url(../../images/works/blue-crystal-background.png);
     min-height: 905px;
-    .main__container-additional-map{
-      min-height: 663px;
-      background-image: url(../../images/works/map.png);
-      margin-top: 95px;
-    }
     .main__link {
       background-color: $btn-link-dark-color;
       padding: 16px 54px 19px 55px;
@@ -163,7 +158,6 @@
       font-size: 18px;
       line-height: 21px;
       color: $text-light-color;
-   
     }
     .common-text-heading {
       padding-top: 110px;

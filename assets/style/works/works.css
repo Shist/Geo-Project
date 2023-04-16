@@ -721,11 +721,6 @@
   background-image: url(../../images/works/blue-crystal-background.png);
   min-height: 905px;
 }
-.main .main__container-additional .main__container-additional-map {
-  min-height: 663px;
-  background-image: url(../../images/works/map.png);
-  margin-top: 95px;
-}
 .main .main__container-additional .main__link {
   background-color: #203e75;
   padding: 16px 54px 19px 55px;
