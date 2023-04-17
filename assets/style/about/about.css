@@ -154,6 +154,11 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1640px) {
+  .header__container {
+    padding-inline: 20px;
+  }
+}
 .header__container .header__logo {
   width: 164px;
   height: 51px;
@@ -448,7 +453,6 @@
 
 .footer {
   background-color: #1c1e21;
-  min-height: 480px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
@@ -458,110 +462,97 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  padding-right: 15px;
+  align-items: center;
 }
-.footer__wr-footer {
+@media (max-width: 1640px) {
+  .footer__container {
+    padding-inline: 20px;
+  }
+}
+.footer__container .footer__wr-footer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 388px;
+  padding-block: 49px 70px;
 }
 @media (max-width: 1280px) {
-  .footer__wr-footer {
-    flex-direction: column;
-    text-align: center;
-    min-height: 900px;
-    justify-content: space-between;
+  .footer__container .footer__wr-footer {
+    justify-content: space-around;
+    padding-block: 30px;
   }
 }
-.footer__wr-info img {
+@media (max-width: 1280px) {
+  .footer__container .footer__wr-footer .footer__wr-info {
+    display: none;
+  }
+}
+.footer__container .footer__wr-footer .footer__wr-info .footer__logo-img {
   margin-bottom: 20px;
 }
-@media (max-width: 1280px) {
-  .footer__wr-info img {
-    padding-top: 20px;
-    margin-bottom: 10px;
-  }
-}
-.footer__wr-info .footer__text {
+.footer__container .footer__wr-footer .footer__wr-info .footer__text {
   max-width: 456px;
   font-size: 18px;
 }
-.footer__link-box {
+.footer__container .footer__wr-footer .footer__link-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 222px;
 }
-@media (max-width: 1280px) {
-  .footer__link-box {
-    justify-content: start;
-    min-height: -moz-min-content;
-    min-height: min-content;
+@media (max-width: 768px) {
+  .footer__container .footer__wr-footer .footer__link-box_main, .footer__container .footer__wr-footer .footer__link-box_nav {
+    display: none;
   }
 }
-.footer__link-box .footer__link-title {
+@media (max-width: 768px) {
+  .footer__container .footer__wr-footer .footer__link-box_contacts {
+    align-items: center;
+  }
+}
+.footer__container .footer__wr-footer .footer__link-box .footer__link-title {
   font-size: 22px;
   font-weight: 700;
 }
-@media (max-width: 1280px) {
-  .footer__link-box .footer__link-title {
-    margin-bottom: 20px;
-  }
-}
-.footer__link-box .footer__link {
+.footer__container .footer__wr-footer .footer__link-box .footer__link {
   color: white;
   text-decoration: none;
   font-size: 18px;
 }
-.footer__link-box .footer__address {
+.footer__container .footer__wr-footer .footer__link-box .footer__link_socials {
+  width: 23px;
+  height: 23px;
+}
+.footer__container .footer__wr-footer .footer__link-box .footer__address {
   max-width: 366px;
   font-size: 18px;
   line-height: 24px;
 }
-@media (max-width: 1280px) {
-  .footer__link-box .footer__address {
+@media (max-width: 768px) {
+  .footer__container .footer__wr-footer .footer__link-box .footer__address {
     text-align: center;
-    margin-bottom: 10px;
   }
 }
-.footer__link-box .footer__number {
-  max-width: 210px;
+.footer__container .footer__wr-footer .footer__link-box .footer__number {
+  width: 210px;
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1280px) {
-  .footer__link-box .footer__number {
-    align-self: center;
-    margin-bottom: 10px;
-  }
-}
-.footer__link-box .footer__icons {
-  max-width: 115px;
+.footer__container .footer__wr-footer .footer__link-box .footer__icons {
+  width: 115px;
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1280px) {
-  .footer__link-box .footer__icons {
-    align-self: center;
-  }
-}
-@media (max-width: 1280px) {
-  .footer__link-box .footer__icons img {
-    margin-right: 10px;
-  }
-}
-.footer__copyright {
-  align-self: center;
+.footer__container .footer__copyright {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  padding-block: 26px 32px;
   max-width: 1170px;
+  width: 100%;
   border-top: 1px solid #353535;
-  padding-top: 26px;
 }
-.footer__copyright .footer__copyright-text {
+.footer__container .footer__copyright .footer__copyright-text {
+  text-align: center;
   font-size: 16px;
   line-height: 24px;
 }/*# sourceMappingURL=about.css.map */
