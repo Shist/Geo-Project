@@ -205,6 +205,9 @@
   }
 }
 .main__map-box {
+  @media (max-width: 480px) {
+    display: none;
+  }
   .main__map {
     position: relative;
   }
@@ -218,19 +221,46 @@
     top: 115px;
     left: 160px;
     z-index: 2;
+    @media (max-width: 1900px) {
+      max-width: 33%;
+      top: 100px;
+      left: 140px;
+    }
+    @media (max-width: 1400px) {
+      padding: 30px;
+      top: 25px;
+      left: 25px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 50%;
+      top: 65px;
+    }
+    @media (max-width: 640px) {
+      max-width: 70%;
+    }
     .main__map-contacts-all {
       padding-bottom: 14px;
+      @media (max-width: 1024px) {
+        display: none;
+      }
       .main__map-contacts-questions {
         font-weight: 700;
         font-size: 45px;
         line-height: 56px;
         color: $text-dark-color;
+        @media (max-width: 1400px) {
+          font-size: 35px;
+          line-height: 40px;
+        }
       }
       .main__map-contacts-email {
         font-weight: 700;
         font-size: 35px;
         line-height: 46px;
         color: $btn-link-dark-color;
+        @media (max-width: 1400px) {
+          font-size: 30px;
+        }
       }
     }
     .main__map-contacts-all-info {
@@ -238,6 +268,13 @@
       grid-template-columns: 300px 3fr;
       grid-template-rows: 100px 100px 50px;
       gap: 15px;
+      @media (max-width: 1900px) {
+        grid-template-columns: 50% 50%;
+      }
+      @media (max-width: 1400px) {
+        grid-template-columns: none;
+        grid-template-rows: none;
+      }
       .main__map-contacts1,
       .main__map-contacts2 {
         width: 300px;
@@ -276,6 +313,9 @@
   display: flex;
   flex: 0 1 50%;
   justify-content: space-between;
+  @media (max-width: 1900px) {
+    width: 100%;
+  }
   .main__map-request-icons {
     img {
       padding-right: 15px;
