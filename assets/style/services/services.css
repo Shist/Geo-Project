@@ -153,6 +153,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+@media (max-width: 1640px) {
+  .header__container {
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 .header__container .header__logo {
   width: 164px;
@@ -168,12 +185,32 @@
   cursor: pointer;
   display: none;
 }
+@media (max-width: 768px) {
+  .header__container .header__burger-menu-btn {
+    display: inline-block;
+  }
+}
 .header__container .header__nav-info-wrapper {
   max-width: 940px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1280px) {
+  .header__container .header__nav-info-wrapper {
+    max-width: 750px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__container .header__nav-info-wrapper {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .header__container .header__nav-info-wrapper {
+    display: none;
+  }
 }
 .header__container .header__nav-info-wrapper .header__nav {
   max-width: 560px;
@@ -211,9 +248,24 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1280px) {
+  .header__container .header__nav-info-wrapper .header__info-wrapper {
+    max-width: 142px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__container .header__nav-info-wrapper .header__info-wrapper {
+    display: none;
+  }
+}
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__phone-wrapper {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .header__container .header__nav-info-wrapper .header__info-wrapper .header__phone-wrapper {
+    display: none;
+  }
 }
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__phone-wrapper .header__phone-keys-icon {
   margin-right: 8px;
@@ -251,6 +303,11 @@
   width: 1px;
   height: 17px;
   background-color: white;
+}
+@media (max-width: 1280px) {
+  .header__container .header__nav-info-wrapper .header__info-wrapper .header__white-vert-line {
+    display: none;
+  }
 }
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__search-btn {
   width: 16px;

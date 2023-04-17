@@ -26,6 +26,9 @@
 
 .global-container {
   &__prices-wrapper {
+    @media (max-width: $pc-s) {
+      display: none;
+    }
     background: #12161c;
     .global-container__prices-container {
       @extend %default-wrapper;
@@ -33,6 +36,10 @@
       display: flex;
       justify-content: flex-start;
       column-gap: 112px;
+      @media (max-width: 1640px) {
+        // We need to set this paddings Only if we don't have enough space (not from the start)
+        padding-inline: 20px;
+      }
     }
   }
 }
