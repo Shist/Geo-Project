@@ -7,7 +7,6 @@
 // Author: Nadezhda
 
 .main {
-  // background-color: #E5E5E5;
   .main__container {
     @extend %default-wrapper;
   }
@@ -16,7 +15,6 @@
     min-height: 419px;
     background-position: center;
     background-repeat: no-repeat;
-    // margin-bottom: 79px;
 
     .main__about-company {
       display: flex;
@@ -50,8 +48,7 @@
     .main__about-company-info {
       display: flex;
       justify-content: space-between;
-      // max-width: 1600px;
-      // width: 100%;
+      align-items: flex-start;
 
       .main__company-info-title {
         display: flex;
@@ -62,24 +59,205 @@
           @include default-h($text-dark-color);
         }
       }
-
-      .main__company-descr {
-        max-width: 1270px;
-        @include default-p($text-blue-color);
+      .main__wr-company-descr {
         margin-bottom: 161px;
+        max-width: 1270px;
+        height: 400px;
+        @include default-p($text-blue-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 
     .main__company-principles {
+      min-height: 890px;
+      height: 100%;
       .main__principles-title {
         @include default-h($text-dark-color);
         margin-bottom: 85px;
         text-align: center;
       }
-      .main__wr-principles-box{
+      .main__wr-principles-box {
         display: grid;
         grid-template-columns: 510px 510px 510px;
         grid-template-rows: 275px 275px;
+        gap: 35px;
+        margin-bottom: 146px;
+
+        .main__principles-box {
+          background-color: #f9fafd;
+          padding-left: 41px;
+          font-family: $font;
+
+          img {
+            width: 50px;
+            padding-top: 35px;
+            margin-bottom: 26px;
+          }
+          .main__principles-box-title {
+            margin-bottom: 7px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            color: $text-black-color;
+          }
+          .main__principles-box-text {
+            display: block;
+            max-width: 390px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            color: $text-blue-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__wr-certificates {
+    background-image: url(../../images/about/blue-crystal-background.png);
+    min-height: 1313px;
+
+    .main__certificates-history {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: $font;
+      padding-top: 109px;
+
+      .main__certificates-title {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 46px;
+        text-align: center;
+        color: $text-blue-color;
+      }
+
+      .main__certificates {
+        min-height: 790px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .main__certificates-img {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .main__certificates-text {
+          @include default-p($text-blue-color);
+          margin-bottom: 118px;
+        }
+      }
+
+      .main__history {
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .main__wr-history-year {
+          display: flex;
+          justify-content: space-between;
+
+          .main__history-year {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: $font;
+            min-height: 200px;
+            justify-content: space-between;
+
+            .main__year {
+              padding: 23px 15px 25px 15px;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 28px;
+              color: $text-light-color;
+              border-radius: 50%;
+            }
+            .main__year_1 {
+              background: $btn-link-dark-color;
+            }
+            .main__year_2 {
+              background: #30569c;
+            }
+            .main__year_3 {
+              background: #225dca;
+            }
+            .main__year_4 {
+              background: #3972dc;
+            }
+            .main__year_5 {
+              background: #236cf2;
+            }
+            .main__year_6 {
+              background: #2568e3;
+            }
+
+            .main__year-descr {
+              max-width: 215px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 18px;
+              color: $text-blue-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__wr-employees-partners {
+    background-color: #e5e5e5;
+    font-family: $font;
+    .main__employees-title,
+    .main__partners-title {
+      padding-top: 60px;
+      margin-bottom: 56px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 46px;
+      text-align: center;
+      color: $text-blue-color;
+    }
+    .main__wr-employees-img {
+      display: flex;
+      justify-content: space-between;
+
+      .main__employees-img {
+        display: flex;
+        flex-direction: column;
+        min-height: 556px;
+        justify-content: space-between;
+        max-width: 379px;
+        img {
+          transform: scale(1.07);
+          margin-bottom: 15px;
+        }
+        .main__employees-name {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 32px;
+          color: $text-black-color;
+        }
+        .main__employees-function {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          color: $text-blue-color;
+          margin-bottom: 112px;
+        }
+      }
+    }
+
+    .main__partners-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      img {
+        margin-bottom: 145px;
       }
     }
   }
