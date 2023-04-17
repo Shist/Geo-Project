@@ -913,6 +913,107 @@
   }
 }
 
+.main__map-box .main__map {
+  position: relative;
+}
+.main__map-box .main__map-contacts {
+  margin-inline: auto;
+  background-color: white;
+  font-family: "Roboto";
+  max-width: 650px;
+  padding: 40px;
+  position: absolute;
+  top: 115px;
+  left: 160px;
+  z-index: 2;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all {
+  padding-bottom: 14px;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-questions {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 56px;
+  color: #102441;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-email {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 46px;
+  color: #203e75;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  grid-template-rows: 100px 100px 50px;
+  gap: 15px;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts1,
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts2 {
+  width: 300px;
+  display: flex;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #102441;
+  padding-bottom: 15px;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  color: #949393;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #102441;
+  padding-bottom: 15px;
+}
+.main__map-box .main__map-contacts .main__map-contacts1-img .img,
+.main__map-box .main__map-contacts .main__map-contacts2-img .img {
+  padding-right: 10px;
+}
+
+.main__map-request {
+  margin-inline: auto;
+  background-color: white;
+  font-family: "Roboto";
+  width: 550px;
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: space-between;
+}
+.main__map-request .main__map-request-icons img {
+  padding-right: 15px;
+}
+
+.main__map-request-btn .main__drilling-work-inform-bt-btn {
+  max-width: 237px;
+  width: 100%;
+  padding-block: 19px 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: #203e75;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.main__map-request-btn .main__drilling-work-inform-bt-btn:hover {
+  transform: scale(1.1);
+}
+
 .footer {
   background-color: #1c1e21;
   min-height: 480px;

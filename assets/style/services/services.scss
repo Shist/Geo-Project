@@ -204,6 +204,92 @@
     }
   }
 }
+.main__map-box {
+  .main__map {
+    position: relative;
+  }
+  .main__map-contacts {
+    margin-inline: auto;
+    background-color: $text-light-color;
+    font-family: $font;
+    max-width: 650px;
+    padding: 40px;
+    position: absolute;
+    top: 115px;
+    left: 160px;
+    z-index: 2;
+    .main__map-contacts-all {
+      padding-bottom: 14px;
+      .main__map-contacts-questions {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 56px;
+        color: $text-dark-color;
+      }
+      .main__map-contacts-email {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 46px;
+        color: $btn-link-dark-color;
+      }
+    }
+    .main__map-contacts-all-info {
+      display: grid;
+      grid-template-columns: 300px 3fr;
+      grid-template-rows: 100px 100px 50px;
+      gap: 15px;
+      .main__map-contacts1,
+      .main__map-contacts2 {
+        width: 300px;
+        display: flex;
+      }
+      .main__map-contactsh2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $text-dark-color;
+        padding-bottom: 15px;
+      }
+      p {
+        @include default-p($text-blue-color);
+        color: #949393;
+      }
+      .main__map-contactsh3 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $text-dark-color;
+        padding-bottom: 15px;
+      }
+    }
+    .main__map-contacts1-img,
+    .main__map-contacts2-img {
+      .img {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+.main__map-request {
+  margin-inline: auto;
+  background-color: $text-light-color;
+  font-family: $font;
+  width: 550px;
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: space-between;
+  .main__map-request-icons {
+    img {
+      padding-right: 15px;
+    }
+  }
+}
+.main__map-request-btn {
+  .main__drilling-work-inform-bt-btn {
+    @include default-btn(237px, $text-light-color, $btn-link-dark-color, 0px);
+    padding: 15px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 .footer {
   background-color: $footer-bg-color;
   min-height: 480px;
