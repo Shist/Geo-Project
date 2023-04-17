@@ -9,6 +9,10 @@
   &__container {
     @extend %default-wrapper;
     padding-block: 15px;
+    @media (max-width: 1640px) {
+      // We need to set this paddings Only if we don't have enough space (not from the start)
+      padding-inline: 20px;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
