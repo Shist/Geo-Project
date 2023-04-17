@@ -6,9 +6,81 @@
 
 // Author: Nadezhda
 
-// .footer{
-//     &__container{
-//         @extend %default-wrapper;
-//     }
+.main {
+  // background-color: #E5E5E5;
+  .main__container {
+    @extend %default-wrapper;
+  }
+  &__wr-about-company {
+    background-image: url(../../images/about/bg-moutains.png);
+    min-height: 419px;
+    background-position: center;
+    background-repeat: no-repeat;
+    // margin-bottom: 79px;
 
-// }
+    .main__about-company {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 780px;
+      min-height: 260px;
+      font-family: $font;
+      color: $text-light-color;
+      text-align: center;
+      padding-top: 102px;
+      margin-bottom: 163px;
+      margin-inline: auto;
+
+      .main__about-company-title {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 55px;
+      }
+      .main__about-company-text {
+        @include default-p($text-light-color);
+      }
+    }
+  }
+
+  &__wr-about-company-info {
+    background-color: #e5e5e5;
+    padding-top: 80px;
+
+    .main__about-company-info {
+      display: flex;
+      justify-content: space-between;
+      // max-width: 1600px;
+      // width: 100%;
+
+      .main__company-info-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 370px;
+        .main__company-title {
+          @include default-h($text-dark-color);
+        }
+      }
+
+      .main__company-descr {
+        max-width: 1270px;
+        @include default-p($text-blue-color);
+        margin-bottom: 161px;
+      }
+    }
+
+    .main__company-principles {
+      .main__principles-title {
+        @include default-h($text-dark-color);
+        margin-bottom: 85px;
+        text-align: center;
+      }
+      .main__wr-principles-box{
+        display: grid;
+        grid-template-columns: 510px 510px 510px;
+        grid-template-rows: 275px 275px;
+      }
+    }
+  }
+}
