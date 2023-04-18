@@ -38,7 +38,7 @@
 @mixin default-btn($max-width, $text-color, $bg-color, $border-radius: 0) {
   max-width: $max-width;
   width: 100%;
-  padding-block: 19px 16px;
+  padding-block: 16px 19px;
   font-family: $font;
   font-weight: 700;
   font-size: 18px;
