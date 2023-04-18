@@ -25,23 +25,66 @@
 }
 
 .emp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   &__img {
+    max-width: 508px;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 39px;
   }
   &__emp-name {
+    margin-bottom: 14px;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: $text-light-color;
   }
   &__emp-text {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-light-color;
   }
 }
 
 .work-card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 58px;
   &__img {
+    max-width: 751px;
+    &_less {
+      max-width: 740px;
+    }
+    width: 100%;
+    height: max-content;
   }
   &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     .work-card__headline {
+      padding-left: 10px;
+      border-left: 4px solid white;
+      @include default-h($text-light-color);
     }
     .work-card__text {
+      padding-left: 10px;
+      @include default-p($text-light-color);
     }
     .work-card__btn-more {
+      margin-left: 10px;
+      @include default-btn(
+        241px,
+        $text-light-color,
+        $btn-link-color,
+        10px
+      );
     }
   }
 }
@@ -82,6 +125,7 @@
       margin-inline: auto;
       .main__video-section-container {
         padding-block: 163px 217px;
+        margin-bottom: 147px;
         background: linear-gradient(180deg, #5b7bb7 0%, #6196cb 100%);
         .main__video-section-wrapper {
           @extend %default-wrapper;
@@ -171,23 +215,52 @@
         }
       }
       .main__about-company-wrapper {
+        @extend %default-wrapper;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 70px;
+        margin-bottom: 124px;
         .main__about-company-info-wrapper {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 70px;
           .main__about-company-logo-img {
+            max-width: 396px;
+            width: 100%;
+            height: max-content;
           }
           .main__about-company-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             .main__about-company-headline {
+              @include default-h($text-light-color);
             }
             .main__about-company-text {
+              @include default-p($text-light-color);
             }
           }
         }
         .main__about-company-emp-wrapper {
+          display: flex;
+          justify-content: space-between;
+          column-gap: 38px;
         }
       }
       .main__work-principles-wrapper {
+        @extend %default-wrapper;
+        margin-bottom: 160px;
         .main__work-principles-headline {
+          @include default-h($text-light-color);
+          margin-bottom: 59px;
+          text-align: center;
         }
         .main__work-cards-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          row-gap: 105px;
         }
       }
       .main__why-we-wrapper {

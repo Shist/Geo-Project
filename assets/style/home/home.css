@@ -64,7 +64,7 @@
   margin: 0 auto;
 }
 
-.global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
+.global-container .main__container .main__work-principles-wrapper, .global-container .main__container .main__about-company-wrapper, .global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -137,7 +137,7 @@
   margin: 0 auto;
 }
 
-.global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
+.global-container .main__container .main__work-principles-wrapper, .global-container .main__container .main__about-company-wrapper, .global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -428,7 +428,7 @@
   margin: 0 auto;
 }
 
-.global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
+.global-container .main__container .main__work-principles-wrapper, .global-container .main__container .main__about-company-wrapper, .global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -501,7 +501,7 @@
   margin: 0 auto;
 }
 
-.global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
+.global-container .main__container .main__work-principles-wrapper, .global-container .main__container .main__about-company-wrapper, .global-container .main__container .main__video-section-container .main__video-section-wrapper, .global-container__prices-wrapper .global-container__prices-container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -632,6 +632,93 @@
   color: #e01e3c;
 }
 
+.emp-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.emp-info__img {
+  max-width: 508px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 39px;
+}
+.emp-info__emp-name {
+  margin-bottom: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: white;
+}
+.emp-info__emp-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.work-card {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+}
+.work-card__img {
+  max-width: 751px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.work-card__img_less {
+  max-width: 740px;
+}
+.work-card__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.work-card__info-wrapper .work-card__headline {
+  padding-left: 10px;
+  border-left: 4px solid white;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: white;
+}
+.work-card__info-wrapper .work-card__text {
+  padding-left: 10px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+}
+.work-card__info-wrapper .work-card__btn-more {
+  margin-left: 10px;
+  max-width: 241px;
+  width: 100%;
+  padding-block: 19px 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: #2797ff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.work-card__info-wrapper .work-card__btn-more:hover {
+  transform: scale(1.1);
+}
+
 .global-container__prices-wrapper {
   background: #12161c;
 }
@@ -663,6 +750,7 @@
 }
 .global-container .main__container .main__video-section-container {
   padding-block: 163px 217px;
+  margin-bottom: 147px;
   background: linear-gradient(180deg, #5b7bb7 0%, #6196cb 100%);
 }
 .global-container .main__container .main__video-section-container .main__video-section-wrapper {
@@ -767,4 +855,66 @@
   height: 389px;
   -o-object-fit: fill;
      object-fit: fill;
+}
+.global-container .main__container .main__about-company-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 70px;
+  margin-bottom: 124px;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-info-wrapper .main__about-company-logo-img {
+  max-width: 396px;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-info-wrapper .main__about-company-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-info-wrapper .main__about-company-text-wrapper .main__about-company-headline {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: white;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-info-wrapper .main__about-company-text-wrapper .main__about-company-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+}
+.global-container .main__container .main__about-company-wrapper .main__about-company-emp-wrapper {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+}
+.global-container .main__container .main__work-principles-wrapper {
+  margin-bottom: 160px;
+}
+.global-container .main__container .main__work-principles-wrapper .main__work-principles-headline {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: white;
+  margin-bottom: 59px;
+  text-align: center;
+}
+.global-container .main__container .main__work-principles-wrapper .main__work-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 105px;
 }/*# sourceMappingURL=home.css.map */
