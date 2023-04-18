@@ -24,6 +24,37 @@
   }
 }
 
+.emp-info {
+  &__img {
+  }
+  &__emp-name {
+  }
+  &__emp-text {
+  }
+}
+
+.work-card {
+  &__img {
+  }
+  &__info-wrapper {
+    .work-card__headline {
+    }
+    .work-card__text {
+    }
+    .work-card__btn-more {
+    }
+  }
+}
+
+.comp-plus-card {
+  &__img {
+  }
+  &__headline {
+  }
+  &__text {
+  }
+}
+
 .global-container {
   &__prices-wrapper {
     @media (max-width: $pc-s) {
@@ -49,6 +80,154 @@
       width: 100%;
       margin-top: 0;
       margin-inline: auto;
+      .main__video-section-container {
+        padding-block: 163px 217px;
+        background: linear-gradient(180deg, #5b7bb7 0%, #6196cb 100%);
+        .main__video-section-wrapper {
+          @extend %default-wrapper;
+          display: flex;
+          justify-content: space-between;
+          .main__company-info-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .main__company-info-headline {
+              max-width: 892px;
+              font-family: $font;
+              font-weight: 700;
+              font-size: 58px;
+              line-height: 55px;
+              color: $text-light-color;
+            }
+            .main__company-info-text {
+              max-width: 800px;
+              @include default-p($text-light-color);
+            }
+            .main__company-pluses-wrapper {
+              max-width: 830px;
+              display: flex;
+              justify-content: flex-start;
+              column-gap: 30px;
+              .main__plus-wrapper {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 14px;
+                .main__vert-white-line {
+                  width: 1px;
+                  height: 13px;
+                  margin-top: 3px;
+                  background-color: $text-light-color;
+                }
+                .main__plus-text {
+                  font-family: $font;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 20px;
+                  color: #c8d7eb;
+                  transition: 0.3s;
+                  &:hover {
+                    transform: scale(1.05);
+                    color: $text-light-color;
+                  }
+                }
+              }
+            }
+            .main__leave-request-btn {
+              margin-left: 12px;
+              @include default-btn(
+                214px,
+                $text-light-color,
+                $btn-link-color,
+                10px
+              );
+            }
+          }
+          .main__video-wrapper {
+            position: relative;
+            .main__video-click-btn {
+              position: absolute;
+              top: 147px;
+              left: 279px;
+              z-index: 1;
+              width: 94px;
+              height: 94px;
+              border: none;
+              background-color: transparent;
+              background-image: url(../../images/home/video-click-btn.svg);
+              background-size: cover;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+            .main__video {
+              width: 652px;
+              height: 389px;
+              object-fit: fill;
+            }
+          }
+        }
+      }
+      .main__about-company-wrapper {
+        .main__about-company-info-wrapper {
+          .main__about-company-logo-img {
+          }
+          .main__about-company-text-wrapper {
+            .main__about-company-headline {
+            }
+            .main__about-company-text {
+            }
+          }
+        }
+        .main__about-company-emp-wrapper {
+        }
+      }
+      .main__work-principles-wrapper {
+        .main__work-principles-headline {
+        }
+        .main__work-cards-wrapper {
+        }
+      }
+      .main__why-we-wrapper {
+        .main__why-we-headline {
+        }
+        .main__why-we-cards-wrapper {
+          .main__why-we-map-img {
+          }
+        }
+      }
+      .map-container {
+      }
+      .main__questions-wrapper {
+        .main__questions-headline {
+        }
+        .main__questions-info-form-wrapper {
+          .main__questions-info-wrapper {
+            .main__questions-text {
+            }
+            .main__questions-mail-phone {
+            }
+          }
+          .main__questions-form {
+            .main__form-name-tel-wrapper {
+              .main__form-input-name {
+              }
+              .main__form-input-phone {
+              }
+            }
+            .main__form-textarea {
+            }
+            .main__form-btn-info-wrapper {
+              .main__form-submit-btn {
+              }
+              .main__form-btn-note {
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

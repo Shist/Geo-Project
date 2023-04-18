@@ -167,11 +167,27 @@
                 </div>
                 <button class="main__leave-request-btn">Оформить заявку</button>
               </div>
-              <video
-                src="./assets/images/home/video-demo.gif"
-                poster="./assets/images/home/video-cover.png"
-                class="main__video"
-              ></video>
+              <div class="main__video-wrapper">
+                <button
+                  class="main__video-click-btn"
+                  id="video-start-btn"
+                  onclick="clickOnVideo()"
+                ></button>
+                <video
+                  poster="./assets/images/home/video-cover.png"
+                  preload="none"
+                  loop
+                  class="main__video"
+                  id="video-demo"
+                  onclick="clickOnVideo()"
+                >
+                  <source
+                    type="video/mp4"
+                    src="./assets/videos/home/video-demo.mp4"
+                    class="main__video-source"
+                  />
+                </video>
+              </div>
             </div>
           </div>
           <div class="main__about-company-wrapper">
@@ -484,18 +500,21 @@
                     name="your-name"
                     placeholder="Ваше имя"
                     required
+                    class="main__form-input-name"
                   />
                   <input
                     type="tel"
                     name="your-phone"
                     placeholder="Ваш телефон"
                     required
+                    class="main__form-input-phone"
                   />
                 </div>
                 <textarea
                   name="your-message"
                   placeholder="Ваше сообщение"
                   required
+                  class="main__form-textarea"
                 ></textarea>
                 <div class="main__form-btn-info-wrapper">
                   <button class="main__form-submit-btn">Оформить заявку</button>
@@ -597,6 +616,19 @@
           </div>
         </div>
       </footer>
+      <script>
+        function clickOnVideo() {
+          var startBtn = document.getElementById("video-start-btn");
+          var videoDemo = document.getElementById("video-demo");
+          if (videoDemo.paused === false) {
+            videoDemo.pause();
+            startBtn.style.display = "inline-block";
+          } else {
+            videoDemo.play();
+            startBtn.style.display = "none";
+          }
+        }
+      </script>
     </div>
   </body>
 </html>
