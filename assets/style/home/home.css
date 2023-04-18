@@ -651,4 +651,13 @@
   .global-container__prices-wrapper .global-container__prices-container {
     padding-inline: 20px;
   }
+}
+.global-container .main {
+  background-color: #689ed4;
+}
+.global-container .main__container {
+  max-width: 1920px;
+  width: 100%;
+  margin-top: 0;
+  margin-inline: auto;
 }/*# sourceMappingURL=home.css.map */

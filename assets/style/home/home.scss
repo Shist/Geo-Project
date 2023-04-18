@@ -42,4 +42,13 @@
       }
     }
   }
+  .main {
+    background-color: $home-bg-color;
+    &__container {
+      max-width: 1920px;
+      width: 100%;
+      margin-top: 0;
+      margin-inline: auto;
+    }
+  }
 }
