@@ -79,22 +79,38 @@
     }
     .work-card__btn-more {
       margin-left: 10px;
-      @include default-btn(
-        241px,
-        $text-light-color,
-        $btn-link-color,
-        10px
-      );
+      @include default-btn(241px, $text-light-color, $btn-link-color, 10px);
     }
   }
 }
 
 .comp-plus-card {
+  max-width: 507px;
+  width: 100%;
+  padding: 35px 30px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #528dc9;
+  border-radius: 10px;
   &__img {
+    max-width: 74px;
+    width: 100%;
+    height: max-content;
   }
   &__headline {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: $text-light-color;
   }
   &__text {
+    font-family: $font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: $text-light-color;
   }
 }
 
@@ -117,6 +133,7 @@
     }
   }
   .main {
+    padding-bottom: 143px;
     background-color: $home-bg-color;
     &__container {
       max-width: 1920px;
@@ -264,38 +281,114 @@
         }
       }
       .main__why-we-wrapper {
+        @extend %default-wrapper;
+        margin-bottom: 161px;
         .main__why-we-headline {
+          @include default-h($text-light-color);
+          margin-bottom: 56px;
+          text-align: center;
         }
         .main__why-we-cards-wrapper {
+          display: grid;
+          gap: 35px;
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: repeat(3, 1fr);
           .main__why-we-map-img {
+            max-width: 507px;
+            width: 100%;
+            height: max-content;
           }
         }
       }
       .map-container {
+        margin-bottom: 135px;
       }
       .main__questions-wrapper {
+        @extend %default-wrapper;
         .main__questions-headline {
+          @include default-h($text-light-color);
+          margin-bottom: 30px;
         }
         .main__questions-info-form-wrapper {
+          display: flex;
+          justify-content: space-between;
           .main__questions-info-wrapper {
+            flex-basis: 49%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 41px;
             .main__questions-text {
+              @include default-p($text-light-color);
             }
             .main__questions-mail-phone {
+              max-width: 298px;
+              font-family: $font;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 27px;
+              color: $text-light-color;
             }
           }
           .main__questions-form {
+            flex-basis: 43%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            row-gap: 14px;
             .main__form-name-tel-wrapper {
-              .main__form-input-name {
-              }
+              display: flex;
+              justify-content: space-between;
+              column-gap: 14px;
+              .main__form-input-name,
               .main__form-input-phone {
+                border: none;
+                outline: none;
+                @include default-p($text-blue-color);
+                max-width: 330px;
+                width: 100%;
+                min-height: 48px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                &::placeholder {
+                  @include default-p($text-blue-color);
+                }
               }
             }
             .main__form-textarea {
+              resize: none;
+              border: none;
+              outline: none;
+              @include default-p($text-blue-color);
+              width: 100%;
+              min-height: 130px;
+              padding: 10px 20px;
+              border-radius: 10px;
+              &::placeholder {
+                @include default-p($text-blue-color);
+              }
             }
             .main__form-btn-info-wrapper {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              column-gap: 26px;
               .main__form-submit-btn {
+                margin-left: 10px;
+                @include default-btn(
+                  214px,
+                  $text-light-color,
+                  $btn-link-color,
+                  10px
+                );
               }
               .main__form-btn-note {
+                max-width: 280px;
+                font-family: $font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $text-light-color;
               }
             }
           }
