@@ -13,11 +13,12 @@
 }
 .main__services {
   font-family: $font;
-  min-height: 420px;
+  padding-inline: 20px;
   background-image: url(../../images/services/bg-machines.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: top 107px;
   @media (max-width: 480px) {
     min-height: 0;
   }
@@ -26,7 +27,7 @@
     font-size: 58px;
     text-align: center;
     color: $text-light-color;
-    padding: 107px 0 31px 0;
+    padding: 107px 0 0 0;margin-bottom: 31px;
     @media (max-width: 1024px) {
       padding: 77px 0 51px 0;
     }
@@ -128,18 +129,20 @@
     }
   }
 }
+.main__drilling-work-inform{
+  flex-basis: 790px;
+}
 .main__drilling-work-inform-text {
-  width: 790px;
-  padding: 80px 0px 0px 0px;
+  
+  
   @media (max-width: 1400px) {
     text-align: center;
-    padding: 0;
     width: 100%;
   }
 }
 .main__drilling-work-inform-text2 {
   padding: 80px 60px 0px 0px;
-  width: 790px;
+ 
   @media (max-width: 1400px) {
     padding: 0;
     width: 100%;
