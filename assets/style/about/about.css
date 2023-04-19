@@ -64,7 +64,7 @@
   margin: 0 auto;
 }
 
-.footer__container, .header__container {
+.main .main__container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -137,7 +137,7 @@
   margin: 0 auto;
 }
 
-.footer__container, .header__container {
+.main .main__container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -428,7 +428,7 @@
   margin: 0 auto;
 }
 
-.footer__container, .header__container {
+.main .main__container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -501,7 +501,7 @@
   margin: 0 auto;
 }
 
-.footer__container, .header__container {
+.main .main__container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
   margin-top: 0;
@@ -612,4 +612,666 @@
   text-align: center;
   font-size: 16px;
   line-height: 24px;
+}
+
+@media (max-width: 1650px) {
+  .main .main__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.main__wr-about-company {
+  background-image: url(../../images/about/bg-moutains.png);
+  min-height: 419px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  .main__wr-about-company {
+    min-height: 550px;
+    background-size: cover;
+  }
+}
+.main__wr-about-company .main__about-company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 780px;
+  min-height: 260px;
+  font-family: "Roboto";
+  color: white;
+  text-align: center;
+  padding-top: 102px;
+  margin-bottom: 163px;
+  margin-inline: auto;
+}
+@media (max-width: 960px) {
+  .main__wr-about-company .main__about-company {
+    max-width: 90%;
+    min-height: 290px;
+  }
+}
+.main__wr-about-company .main__about-company .main__about-company-title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 55px;
+}
+@media (max-width: 960px) {
+  .main__wr-about-company .main__about-company .main__about-company-title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company .main__about-company .main__about-company-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-about-company .main__about-company .main__about-company-title {
+    font-size: 32px;
+  }
+}
+.main__wr-about-company .main__about-company .main__about-company-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .main__wr-about-company .main__about-company .main__about-company-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company .main__about-company .main__about-company-text {
+    font-size: 16px;
+  }
+}
+.main__wr-about-company-info {
+  background-color: #e5e5e5;
+  padding-top: 80px;
+}
+.main__wr-about-company-info .main__about-company-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__about-company-info {
+    flex-direction: column;
+  }
+}
+.main__wr-about-company-info .main__about-company-info .main__company-info-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 370px;
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title {
+    height: 100px;
+    justify-content: start;
+    width: 100%;
+  }
+}
+.main__wr-about-company-info .main__about-company-info .main__company-info-title .main__company-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: #102441;
+}
+@media (max-width: 1400px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title .main__company-title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 576px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title .main__company-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title .main__company-title {
+    align-self: center;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title img {
+    display: block;
+    max-width: 85%;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__about-company-info .main__company-info-title img {
+    display: none;
+  }
+}
+.main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+  margin-bottom: 161px;
+  max-width: 1270px;
+  height: 400px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 1650px) {
+  .main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1400px) {
+  .main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+    max-width: 70%;
+    overflow: scroll;
+  }
+}
+@media (max-width: 960px) {
+  .main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+    max-width: 60%;
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+    font-size: 18px;
+    max-width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__about-company-info .main__wr-company-descr {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.main__wr-about-company-info .main__company-principles {
+  min-height: 890px;
+  height: 100%;
+}
+@media (max-width: 1280px) {
+  .main__wr-about-company-info .main__company-principles {
+    min-height: 1200px;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__company-principles {
+    min-height: 1500px;
+  }
+}
+@media (max-width: 576px) {
+  .main__wr-about-company-info .main__company-principles {
+    min-height: 1700px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__company-principles {
+    min-height: 1650px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-about-company-info .main__company-principles {
+    min-height: 1550px;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__principles-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  color: #102441;
+  margin-bottom: 85px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__company-principles .main__principles-title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__company-principles .main__principles-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-about-company-info .main__company-principles .main__principles-title {
+    font-size: 32px;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__wr-principles-box {
+  display: grid;
+  grid-template-columns: 510px 510px 510px;
+  grid-template-rows: 275px 275px;
+  gap: 35px;
+  margin-bottom: 146px;
+}
+@media (max-width: 1650px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box {
+    grid-template-columns: minmax(350px, 1fr) minmax(350px, 1fr) minmax(350px, 1fr);
+  }
+}
+@media (max-width: 1280px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box {
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+    grid-template-rows: minmax(290px, 1fr) minmax(290px, 1fr) minmax(290px, 1fr);
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box {
+    grid-template-columns: minmax(250px, 1fr);
+    grid-template-rows: minmax(210px, 1fr) minmax(210px, 1fr) minmax(210px, 1fr) minmax(210px, 1fr) minmax(210px, 1fr) minmax(210px, 1fr);
+    gap: 25px;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box {
+  background-color: #f9fafd;
+  padding-left: 41px;
+  font-family: "Roboto";
+}
+@media (max-width: 768px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box {
+    max-width: 100%;
+    text-align: center;
+    justify-items: center;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box img {
+  width: 50px;
+  padding-top: 35px;
+  margin-bottom: 26px;
+}
+@media (max-width: 480px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box img {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-title {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #141414;
+}
+@media (max-width: 1280px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-title {
+    max-width: 70%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-title {
+    font-size: 16px;
+  }
+}
+.main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-text {
+  display: block;
+  max-width: 390px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #405267;
+}
+@media (max-width: 1280px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-text {
+    max-width: 70%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-about-company-info .main__company-principles .main__wr-principles-box .main__principles-box .main__principles-box-text {
+    font-size: 14px;
+    max-width: 90%;
+  }
+}
+.main__wr-certificates {
+  background-image: url(../../images/about/blue-crystal-background.png);
+  min-height: 1313px;
+}
+@media (max-width: 960px) {
+  .main__wr-certificates {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1500px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-certificates {
+    min-height: 1600px;
+  }
+}
+.main__wr-certificates .main__certificates-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Roboto";
+  padding-top: 109px;
+}
+@media (max-width: 768px) {
+  .main__wr-certificates .main__certificates-history {
+    padding-top: 80px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__certificates-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  text-align: center;
+  color: #405267;
+}
+@media (max-width: 768px) {
+  .main__wr-certificates .main__certificates-history .main__certificates-title {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .main__wr-certificates .main__certificates-history .main__certificates-title {
+    font-size: 32px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__certificates {
+  min-height: 790px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .main__wr-certificates .main__certificates-history .main__certificates {
+    min-height: 490px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__certificates .main__certificates-img {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1650px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-img img {
+    display: inline-block;
+    width: 32%;
+    height: auto;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__certificates .main__certificates-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  margin-bottom: 118px;
+}
+@media (max-width: 1650px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-text {
+    max-width: 98%;
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (max-width: 1280px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-text {
+    max-width: 90%;
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-certificates .main__certificates-history .main__certificates .main__certificates-text {
+    max-width: 100%;
+    overflow: scroll;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__history {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 960px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year {
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 500px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto";
+  min-height: 200px;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (max-width: 960px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year {
+    flex-basis: 32%;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year {
+    flex-basis: 49%;
+    min-height: 210px;
+    margin-bottom: 10px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year {
+  padding: 23px 15px 25px 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  border-radius: 50%;
+}
+@media (max-width: 1280px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year {
+    font-size: 18px;
+    padding: 20px 13px 18px 13px;
+    margin-bottom: 5px;
+  }
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_1 {
+  background: #203e75;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_2 {
+  background: #30569c;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_3 {
+  background: #225dca;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_4 {
+  background: #3972dc;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_5 {
+  background: #236cf2;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year_6 {
+  background: #2568e3;
+}
+.main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year-descr {
+  max-width: 215px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #405267;
+}
+@media (max-width: 576px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year-descr {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year-descr {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .main__wr-certificates .main__certificates-history .main__history .main__wr-history-year .main__history-year .main__year-descr {
+    max-width: 90%;
+  }
+}
+.main__wr-employees-partners {
+  background-color: #e5e5e5;
+  font-family: "Roboto";
+}
+.main__wr-employees-partners .main__employees-title,
+.main__wr-employees-partners .main__partners-title {
+  padding-top: 60px;
+  margin-bottom: 56px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 46px;
+  text-align: center;
+  color: #405267;
+}
+@media (max-width: 768px) {
+  .main__wr-employees-partners .main__employees-title,
+  .main__wr-employees-partners .main__partners-title {
+    font-size: 38px;
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 360px) {
+  .main__wr-employees-partners .main__employees-title,
+  .main__wr-employees-partners .main__partners-title {
+    font-size: 32px;
+  }
+}
+.main__wr-employees-partners .main__wr-employees-img {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .main__wr-employees-partners .main__wr-employees-img {
+    flex-wrap: wrap;
+  }
+}
+.main__wr-employees-partners .main__wr-employees-img .main__employees-img {
+  display: flex;
+  flex-direction: column;
+  min-height: 556px;
+  justify-content: space-between;
+  max-width: 379px;
+}
+@media (max-width: 1280px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img {
+    min-height: 290px;
+  }
+}
+@media (max-width: 768px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img {
+    height: 290px;
+  }
+}
+@media (max-width: 576px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img {
+    flex-basis: 48%;
+    min-height: 380px;
+  }
+}
+@media (max-width: 410px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img {
+    min-height: 300px;
+  }
+}
+.main__wr-employees-partners .main__wr-employees-img .main__employees-img img {
+  transform: scale(1.07);
+  margin-bottom: 15px;
+}
+@media (max-width: 1650px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-name {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #141414;
+}
+@media (max-width: 576px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-name {
+    font-size: 16px;
+  }
+}
+.main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-function {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #405267;
+  margin-bottom: 112px;
+}
+@media (max-width: 1280px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-function {
+    font-size: 18px;
+    max-width: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .main__wr-employees-partners .main__wr-employees-img .main__employees-img .main__employees-function {
+    font-size: 16px;
+  }
+}
+.main__wr-employees-partners .main__partners-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.main__wr-employees-partners .main__partners-icons img {
+  margin-bottom: 145px;
+}
+@media (max-width: 1024px) {
+  .main__wr-employees-partners .main__partners-icons img {
+    display: block;
+    width: 70%;
+    height: auto;
+  }
 }/*# sourceMappingURL=about.css.map */
