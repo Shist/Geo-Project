@@ -29,7 +29,6 @@
     .main__global-container-title-text {
       max-width: 813px;
       width: 100%;
-      min-height: 63px;
       @include default-p($text-light-color);
       text-align: center;
       @media (max-width: $tablet-l) {
@@ -38,7 +37,7 @@
       }
     }
   }
-  .title-heading {
+  .main__title-heading {
     max-width: 892px;
     margin-bottom: 31px;
     font-family: "$font";
@@ -56,6 +55,7 @@
     @extend %default-wrapper;
     .main__wrapper-common {
       display: flex;
+      justify-content: space-between;
       @media (max-width: $pc-m) {
         margin-left: 20px;
         margin-right: 20px;
@@ -69,13 +69,21 @@
         }
       }
       .main__wrapper-common-picture {
-        margin-right: 47px;
+        height: max-content;
+        @media (max-width: $pc-m) {
+          max-width: 40%;
+          margin-right: 20px;
+        }
+
         @media (max-width: $laptop-l) {
           width: 30%;
         }
         @media (max-width: $phone-l) {
           display: none;
         }
+      }
+      .main__wrapper-common-text {
+        max-width: 800px;
       }
       .main__wrapper-common-text-paragrph {
         @include default-p($text-blue-color);
@@ -101,8 +109,9 @@
       @include default-p($text-blue-color);
       margin-bottom: 20px;
       @media (max-width: $pc-m) {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 20px;
       }
     }
   }
@@ -139,8 +148,11 @@
       }
     }
   }
-  .common-text-heading {
+  .main__common-text-heading {
     @include default-h($text-dark-color);
+    @media (max-width: $pc-m) {
+      margin: 0 10px 0 10px;
+    }
     @media (max-width: $tablet-l) {
       font-size: 35px;
       line-height: 32px;
@@ -168,6 +180,9 @@
   }
   .main__wrapper-certificates {
     margin-bottom: 46px;
+    @media (max-width: $pc-m) {
+      margin-bottom: 26px;
+    }
     .main__wrapper-certificates-picture {
       @media (max-width: $pc-m) {
         display: flex;
@@ -182,6 +197,9 @@
       text-align: center;
       margin-top: 100px;
       margin-bottom: 20px;
+      @media (max-width: $pc-m) {
+        margin-top: 50px;
+      }
       @media (max-width: $phone-l) {
         margin-top: 30px;
         min-height: 41px;
@@ -209,6 +227,9 @@
         width: 100%;
       }
       .main__wrapper-common-why-pic {
+        @media (max-width: $pc-m) {
+          width: 80%;
+        }
         @media (max-width: $laptop-l) {
           width: 70%;
         }
@@ -221,14 +242,22 @@
     .main__wrapper-common-why-text {
       margin-top: 55px;
       width: 50%;
+      @media (max-width: $pc-m) {
+        margin-top: 20px;
+      }
       @media (max-width: $laptop-l) {
         width: 50%;
+        margin-top: 20px;
       }
       @media (max-width: $phone-l) {
         margin-top: 10px;
       }
-      .common-text-heading {
+      .main__common-text-heading {
         margin-bottom: 44px;
+        margin-top: 20px;
+        @media (max-width: $pc-m) {
+          margin-bottom: 20px;
+        }
       }
       .main__wrapper-common-best-wrap {
         display: flex;
@@ -251,23 +280,27 @@
     margin: 0 auto;
     text-align: center;
     background-image: url(../../images/works/blue-crystal-background.png);
-    min-height: 905px;
+    padding-block: 10px;
     @media (max-width: $pc-m) {
-      margin-bottom: 40px;
+      padding-inline: 20px;
     }
+
     .main__link {
-      background-color: $btn-link-dark-color;
-      padding: 16px 54px 19px 55px;
+      display: inline-block;
       text-decoration: none;
-      font-family: $font;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      color: $text-light-color;
+      @include default-btn(214px, $text-light-color, $btn-link-dark-color);
+      @media (max-width: $pc-m) {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
     }
-    .common-text-heading {
+    .main__common-text-heading {
       padding-top: 110px;
       margin-bottom: 39px;
+      @media (max-width: $pc-m) {
+        padding-top: 30px;
+      }
       @media (max-width: $phone-l) {
         padding-top: 5px;
       }
@@ -276,8 +309,10 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 56px;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      column-gap: 10px;
       @media (max-width: $pc-m) {
-        flex-wrap: wrap;
         justify-content: space-around;
       }
       @media (max-width: $phone-l) {
@@ -288,6 +323,9 @@
           width: 300px;
         }
         .main__wrapper-projecting-item-img {
+          @media (max-width: $pc-m) {
+            margin-top: 10px;
+          }
           @media (max-width: $phone-l) {
             width: 300px;
           }
