@@ -471,6 +471,169 @@
   margin-inline: auto;
 }
 
+@media (max-width: 480px) {
+  .main__map-box {
+    display: none;
+  }
+}
+.main__map-box .main__map {
+  position: relative;
+}
+.main__map-box .main__map-contacts {
+  margin-inline: auto;
+  background-color: white;
+  font-family: "Roboto";
+  max-width: 650px;
+  padding: 40px;
+  position: absolute;
+  top: 115px;
+  left: 160px;
+  z-index: 2;
+}
+@media (max-width: 1900px) {
+  .main__map-box .main__map-contacts {
+    max-width: 33%;
+    top: 100px;
+    left: 140px;
+  }
+}
+@media (max-width: 1400px) {
+  .main__map-box .main__map-contacts {
+    padding: 30px;
+    top: 25px;
+    left: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .main__map-box .main__map-contacts {
+    max-width: 50%;
+    top: 65px;
+  }
+}
+@media (max-width: 640px) {
+  .main__map-box .main__map-contacts {
+    max-width: 70%;
+  }
+}
+.main__map-box .main__map-contacts .main__map-contacts-all {
+  padding-bottom: 14px;
+}
+@media (max-width: 1024px) {
+  .main__map-box .main__map-contacts .main__map-contacts-all {
+    display: none;
+  }
+}
+.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-questions {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 56px;
+  color: #102441;
+}
+@media (max-width: 1400px) {
+  .main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-questions {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-email {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 46px;
+  color: #203e75;
+}
+@media (max-width: 1400px) {
+  .main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-email {
+    font-size: 30px;
+  }
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  grid-template-rows: 100px 100px 50px;
+  gap: 15px;
+}
+@media (max-width: 1900px) {
+  .main__map-box .main__map-contacts .main__map-contacts-all-info {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 1400px) {
+  .main__map-box .main__map-contacts .main__map-contacts-all-info {
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts1,
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts2 {
+  width: 300px;
+  display: flex;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #102441;
+  padding-bottom: 15px;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #405267;
+  color: #949393;
+}
+.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #102441;
+  padding-bottom: 15px;
+}
+.main__map-box .main__map-contacts .main__map-contacts1-img .img,
+.main__map-box .main__map-contacts .main__map-contacts2-img .img {
+  padding-right: 10px;
+}
+
+.main__map-request {
+  margin-inline: auto;
+  background-color: white;
+  font-family: "Roboto";
+  width: 550px;
+  display: flex;
+  flex: 0 1 50%;
+  justify-content: space-between;
+}
+@media (max-width: 1900px) {
+  .main__map-request {
+    width: 100%;
+  }
+}
+.main__map-request .main__map-request-icons img {
+  padding-right: 15px;
+}
+
+.main__map-request-btn .main__drilling-work-inform-bt-btn {
+  max-width: 237px;
+  width: 100%;
+  padding-block: 16px 19px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: #203e75;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.main__map-request-btn .main__drilling-work-inform-bt-btn:hover {
+  transform: scale(1.1);
+}
+
 /* font "Roboto", normal, 400 */
 @font-face {
   font-family: "Roboto";
@@ -948,167 +1111,4 @@
   .main__drilling-work-inform-bt .main__drilling-work-inform-bt-btn {
     font-size: small;
   }
-}
-
-@media (max-width: 480px) {
-  .main__map-box {
-    display: none;
-  }
-}
-.main__map-box .main__map {
-  position: relative;
-}
-.main__map-box .main__map-contacts {
-  margin-inline: auto;
-  background-color: white;
-  font-family: "Roboto";
-  max-width: 650px;
-  padding: 40px;
-  position: absolute;
-  top: 115px;
-  left: 160px;
-  z-index: 2;
-}
-@media (max-width: 1900px) {
-  .main__map-box .main__map-contacts {
-    max-width: 33%;
-    top: 100px;
-    left: 140px;
-  }
-}
-@media (max-width: 1400px) {
-  .main__map-box .main__map-contacts {
-    padding: 30px;
-    top: 25px;
-    left: 25px;
-  }
-}
-@media (max-width: 1024px) {
-  .main__map-box .main__map-contacts {
-    max-width: 50%;
-    top: 65px;
-  }
-}
-@media (max-width: 640px) {
-  .main__map-box .main__map-contacts {
-    max-width: 70%;
-  }
-}
-.main__map-box .main__map-contacts .main__map-contacts-all {
-  padding-bottom: 14px;
-}
-@media (max-width: 1024px) {
-  .main__map-box .main__map-contacts .main__map-contacts-all {
-    display: none;
-  }
-}
-.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-questions {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 56px;
-  color: #102441;
-}
-@media (max-width: 1400px) {
-  .main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-questions {
-    font-size: 35px;
-    line-height: 40px;
-  }
-}
-.main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-email {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 46px;
-  color: #203e75;
-}
-@media (max-width: 1400px) {
-  .main__map-box .main__map-contacts .main__map-contacts-all .main__map-contacts-email {
-    font-size: 30px;
-  }
-}
-.main__map-box .main__map-contacts .main__map-contacts-all-info {
-  display: grid;
-  grid-template-columns: 300px 3fr;
-  grid-template-rows: 100px 100px 50px;
-  gap: 15px;
-}
-@media (max-width: 1900px) {
-  .main__map-box .main__map-contacts .main__map-contacts-all-info {
-    grid-template-columns: 50% 50%;
-  }
-}
-@media (max-width: 1400px) {
-  .main__map-box .main__map-contacts .main__map-contacts-all-info {
-    grid-template-columns: none;
-    grid-template-rows: none;
-  }
-}
-.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts1,
-.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contacts2 {
-  width: 300px;
-  display: flex;
-}
-.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh2 {
-  font-weight: 700;
-  font-size: 20px;
-  color: #102441;
-  padding-bottom: 15px;
-}
-.main__map-box .main__map-contacts .main__map-contacts-all-info p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #405267;
-  color: #949393;
-}
-.main__map-box .main__map-contacts .main__map-contacts-all-info .main__map-contactsh3 {
-  font-weight: 700;
-  font-size: 20px;
-  color: #102441;
-  padding-bottom: 15px;
-}
-.main__map-box .main__map-contacts .main__map-contacts1-img .img,
-.main__map-box .main__map-contacts .main__map-contacts2-img .img {
-  padding-right: 10px;
-}
-
-.main__map-request {
-  margin-inline: auto;
-  background-color: white;
-  font-family: "Roboto";
-  width: 550px;
-  display: flex;
-  flex: 0 1 50%;
-  justify-content: space-between;
-}
-@media (max-width: 1900px) {
-  .main__map-request {
-    width: 100%;
-  }
-}
-.main__map-request .main__map-request-icons img {
-  padding-right: 15px;
-}
-
-.main__map-request-btn .main__drilling-work-inform-bt-btn {
-  max-width: 237px;
-  width: 100%;
-  padding-block: 16px 19px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: white;
-  background-color: #203e75;
-  border-radius: 0px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  padding: 15px;
-  font-weight: 700;
-  font-size: 18px;
-}
-.main__map-request-btn .main__drilling-work-inform-bt-btn:hover {
-  transform: scale(1.1);
 }/*# sourceMappingURL=services.css.map */
