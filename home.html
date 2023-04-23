@@ -73,8 +73,8 @@
             alt="logo"
             class="header__logo"
           />
-          <button class="header__burger-menu-btn"></button>
-          <div class="header__nav-info-wrapper">
+          <button class="header__burger-menu-btn" id="burger-menu-btn"></button>
+          <div class="header__nav-info-wrapper" id="header-nav-info">
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__nav-list-item">
@@ -171,7 +171,6 @@
                 <button
                   class="main__video-click-btn"
                   id="video-start-btn"
-                  onclick="clickOnVideo()"
                 ></button>
                 <video
                   poster="./assets/images/home/video-cover.png"
@@ -179,7 +178,6 @@
                   loop
                   class="main__video"
                   id="video-demo"
-                  onclick="clickOnVideo()"
                 >
                   <source
                     type="video/mp4"
@@ -628,19 +626,8 @@
           </div>
         </div>
       </footer>
-      <script>
-        function clickOnVideo() {
-          var startBtn = document.getElementById("video-start-btn");
-          var videoDemo = document.getElementById("video-demo");
-          if (videoDemo.paused === false) {
-            videoDemo.pause();
-            startBtn.style.display = "inline-block";
-          } else {
-            videoDemo.play();
-            startBtn.style.display = "none";
-          }
-        }
-      </script>
+      <script src="./assets/scripts/toggleBurgerMenu.js"></script>
+      <script src="./assets/scripts/toggleVideo.js"></script>
     </div>
   </body>
 </html>
