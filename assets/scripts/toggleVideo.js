@@ -1,6 +1,4 @@
 function clickOnVideo() {
-  const startBtn = document.getElementById("video-start-btn");
-  const videoDemo = document.getElementById("video-demo");
   if (videoDemo.paused) {
     startBtn.style.display = "none";
     videoDemo.play();
@@ -9,3 +7,8 @@ function clickOnVideo() {
     startBtn.style.display = "inline-block";
   }
 }
+
+const startBtn = document.getElementById("video-start-btn");
+const videoDemo = document.getElementById("video-demo");
+startBtn.onclick = clickOnVideo;
+videoDemo.onclick = clickOnVideo;
