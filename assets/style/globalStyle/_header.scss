@@ -6,6 +6,10 @@
 .header {
   background-image: url(../../images/global/header/bg.png);
   background-size: cover;
+  @media (max-width: $tablet-l) {
+    position: sticky;
+    top: 0;
+  }
   &__container {
     @extend %default-wrapper;
     padding-block: 15px;
