@@ -1,12 +1,17 @@
 const headerNavInfo = document.getElementById("header-nav-info");
 const burgerMenuBtn = document.getElementById("burger-menu-btn");
-let burgerIsOpen = false;
 burgerMenuBtn.onclick = () => {
-  if (burgerIsOpen) {
+  if (headerNavInfo.style.display === "flex") {
     headerNavInfo.style.display = "none";
-    burgerIsOpen = false;
   } else {
     headerNavInfo.style.display = "flex";
-    burgerIsOpen = true;
   }
 };
+const tabletL = 768;
+window.onresize = () => {
+  if (this.outerWidth > tabletL) {
+    headerNavInfo.style.display = "flex";
+  } else {
+    headerNavInfo.style.display = "none";
+  }
+}
