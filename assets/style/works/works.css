@@ -652,7 +652,7 @@
 
 .main {
   font-family: "Roboto";
-  background-color: #d9d9d9;
+  background-color: #f1f4f8;
 }
 .main .main__global-container-title {
   background-image: url(../../images/works/bg-drilling.png);
@@ -672,7 +672,13 @@
     margin-bottom: 42px;
   }
 }
+@media (max-width: 360px) {
+  .main .main__global-container-title {
+    margin-bottom: 15px;
+  }
+}
 .main .main__global-container-title .main__global-container-title-text {
+  padding-inline: 20px;
   max-width: 813px;
   width: 100%;
   font-family: "Roboto";
@@ -705,6 +711,7 @@
   }
 }
 .main .main__wrapper .main__wrapper-common {
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -719,8 +726,15 @@
   .main .main__wrapper .main__wrapper-common {
     min-height: 439px;
     width: 100%;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 1400px) and (max-width: 360px) {
+  .main .main__wrapper .main__wrapper-common {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 .main .main__wrapper .main__wrapper-common .main__wrapper-common-picture {
@@ -747,6 +761,7 @@
   max-width: 800px;
 }
 .main .main__wrapper .main__wrapper-common .main__wrapper-common-text-paragrph {
+  padding-inline: 10px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
@@ -754,9 +769,13 @@
   color: #405267;
   margin-top: 20px;
 }
+@media (max-width: 360px) {
+  .main .main__wrapper .main__wrapper-common .main__wrapper-common-text-paragrph {
+    padding: 0;
+  }
+}
 .main .main__wrapper .main__wrapper-minerals-title {
   margin-bottom: 20px;
-  margin-top: 40px;
   font-weight: 700;
   font-size: 32px;
   line-height: 28px;
@@ -771,6 +790,20 @@
 @media (max-width: 480px) {
   .main .main__wrapper .main__wrapper-minerals-title {
     margin-top: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .main .main__wrapper .main__wrapper-minerals-title {
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
+.main .main__wrapper .main__wrapper-common-text-basic {
+  margin-bottom: 100px;
+}
+@media (max-width: 1400px) {
+  .main .main__wrapper .main__wrapper-common-text-basic {
+    margin-bottom: 30px;
   }
 }
 .main .main__wrapper .main__wrapper-common-text-paragrph {
@@ -845,6 +878,13 @@
     line-height: 32px;
   }
 }
+@media (max-width: 360px) {
+  .main .main__common-text-heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
 .main .title-best {
   max-width: 181;
   min-height: 38px;
@@ -865,12 +905,23 @@
   width: 100%;
   min-height: 57px;
 }
+@media (max-width: 360px) {
+  .main .text-best {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .main .main__wrapper-certificates {
   margin-bottom: 46px;
 }
 @media (max-width: 1400px) {
   .main .main__wrapper-certificates {
     margin-bottom: 26px;
+  }
+}
+@media (max-width: 360px) {
+  .main .main__wrapper-certificates {
+    margin-bottom: 5px;
   }
 }
 @media (max-width: 1400px) {
@@ -885,7 +936,6 @@
   min-height: 91px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 20px;
 }
 @media (max-width: 1400px) {
@@ -912,6 +962,13 @@
     margin-right: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .main .main__wrapper-common-why {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 1024px) {
@@ -970,6 +1027,18 @@
     margin-bottom: 20px;
   }
 }
+@media (max-width: 360px) {
+  .main .main__wrapper-common-why .main__wrapper-common-why-text .main__common-text-heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 360px) {
+  .main .main__wrapper-common-why .main__wrapper-common-why-text .main__common-text-heading {
+    margin: 5px 0 5px 0;
+  }
+}
 .main .main__wrapper-common-why .main__wrapper-common-why-text .main__wrapper-common-best-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -980,6 +1049,11 @@
   align-items: start;
   margin-bottom: 50px;
 }
+@media (max-width: 360px) {
+  .main .main__wrapper-common-why .main__wrapper-common-why-text .main__wrapper-common-best-wrap .main__wrapper-common-best-item {
+    margin-bottom: 5px;
+  }
+}
 .main .main__wrapper-common-why .main__wrapper-common-why-text .main__wrapper-common-best-wrap .main__wrapper-common-best-item .main__wrapper-common-best-item-picture {
   margin-right: 15px;
 }
@@ -989,6 +1063,8 @@
   margin: 0 auto;
   text-align: center;
   background-image: url(../../images/works/blue-crystal-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-block: 10px;
 }
 @media (max-width: 1400px) {
@@ -999,6 +1075,7 @@
 .main .main__container-additional .main__link {
   display: inline-block;
   text-decoration: none;
+  margin-bottom: 95px;
   max-width: 214px;
   width: 100%;
   padding-block: 16px 19px;
@@ -1038,6 +1115,13 @@
     padding-top: 5px;
   }
 }
+@media (max-width: 360px) {
+  .main .main__container-additional .main__common-text-heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
 .main .main__container-additional .main__wrapper-projecting {
   display: flex;
   justify-content: space-between;
@@ -1049,7 +1133,8 @@
 }
 @media (max-width: 1400px) {
   .main .main__container-additional .main__wrapper-projecting {
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 @media (max-width: 480px) {

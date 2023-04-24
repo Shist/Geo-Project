@@ -8,7 +8,7 @@
 
 .main {
   font-family: $font;
-  background-color: #d9d9d9; // Pasha: "D9D9D9" --> "#D9D9D9"
+  background-color: #f1f4f8; // Pasha: "D9D9D9" --> "#D9D9D9"
 
   .main__global-container-title {
     background-image: url(../../images/works/bg-drilling.png);
@@ -25,8 +25,12 @@
       background-position: center;
       margin-bottom: 42px;
     }
-
+    @media (max-width: $phone-m) {
+    margin-bottom: 15px;
+    }
+ 
     .main__global-container-title-text {
+      padding-inline: 20px;
       max-width: 813px;
       width: 100%;
       @include default-p($text-light-color);
@@ -54,6 +58,7 @@
   .main__wrapper {
     @extend %default-wrapper;
     .main__wrapper-common {
+      margin-bottom: 40px;
       display: flex;
       justify-content: space-between;
       @media (max-width: $pc-m) {
@@ -64,8 +69,13 @@
         @media (max-width: $laptop-l) {
           min-height: 439px;
           width: 100%;
-          align-items: center;
+          align-items: start;
           justify-content: space-between;
+          margin-bottom: 15px;
+        }
+        @media (max-width: $phone-m) {
+          margin-left: 5px;
+          margin-right: 5px;
         }
       }
       .main__wrapper-common-picture {
@@ -86,13 +96,16 @@
         max-width: 800px;
       }
       .main__wrapper-common-text-paragrph {
+        padding-inline: 10px;
         @include default-p($text-blue-color);
         margin-top: 20px;
+        @media (max-width: $phone-m) {
+          padding: 0;
+        }
       }
     }
     .main__wrapper-minerals-title {
       margin-bottom: 20px;
-      margin-top: 40px;
       font-weight: 700;
       font-size: 32px;
       line-height: 28px;
@@ -103,6 +116,16 @@
       }
       @media (max-width: $phone-l) {
         margin-top: 20px;
+      }
+      @media (max-width: $phone-m) {
+        font-size: 25px;
+        line-height: 26px;
+      }
+    }
+    .main__wrapper-common-text-basic {
+      margin-bottom: 100px;
+      @media (max-width: $pc-m) {
+        margin-bottom: 30px;
       }
     }
     .main__wrapper-common-text-paragrph {
@@ -146,6 +169,7 @@
         display: flex;
         flex-direction: column;
       }
+  
     }
   }
   .main__common-text-heading {
@@ -156,6 +180,11 @@
     @media (max-width: $tablet-l) {
       font-size: 35px;
       line-height: 32px;
+    }
+    @media (max-width: $phone-m) {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 26px;
     }
   }
   .title-best {
@@ -177,11 +206,18 @@
     max-width: 306px;
     width: 100%;
     min-height: 57px;
+    @media (max-width: $phone-m) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
   .main__wrapper-certificates {
     margin-bottom: 46px;
     @media (max-width: $pc-m) {
       margin-bottom: 26px;
+    }
+    @media (max-width: $phone-m) {
+      margin-bottom: 5px;
     }
     .main__wrapper-certificates-picture {
       @media (max-width: $pc-m) {
@@ -195,7 +231,6 @@
       min-height: 91px;
       margin: 0 auto;
       text-align: center;
-      margin-top: 100px;
       margin-bottom: 20px;
       @media (max-width: $pc-m) {
         margin-top: 50px;
@@ -217,6 +252,11 @@
       margin-right: 20px;
       justify-content: center;
       align-items: center;
+      margin-bottom: 5px;
+    }
+    @media (max-width: $phone-m) {
+      margin-left: 5px;
+      margin-right: 5px;
     }
     .main__wrapper-common-why-picture {
       @media (max-width: $laptop-l) {
@@ -258,15 +298,27 @@
         @media (max-width: $pc-m) {
           margin-bottom: 20px;
         }
+        @media (max-width: $phone-m) {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 26px;
+        }
+        @media (max-width: $phone-m) {
+          margin: 5px 0 5px 0;
+        }
       }
       .main__wrapper-common-best-wrap {
         display: flex;
         flex-wrap: wrap;
+
         .main__wrapper-common-best-item {
           display: flex;
           justify-content: start;
           align-items: start;
           margin-bottom: 50px;
+          @media (max-width: $phone-m) {
+            margin-bottom: 5px;
+          }
           .main__wrapper-common-best-item-picture {
             margin-right: 15px;
           }
@@ -280,6 +332,8 @@
     margin: 0 auto;
     text-align: center;
     background-image: url(../../images/works/blue-crystal-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-block: 10px;
     @media (max-width: $pc-m) {
       padding-inline: 20px;
@@ -288,6 +342,7 @@
     .main__link {
       display: inline-block;
       text-decoration: none;
+      margin-bottom: 95px;
       @include default-btn(214px, $text-light-color, $btn-link-dark-color);
       @media (max-width: $pc-m) {
         display: inline-block;
@@ -304,6 +359,11 @@
       @media (max-width: $phone-l) {
         padding-top: 5px;
       }
+      @media (max-width: $phone-m) {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 26px;
+      }
     }
     .main__wrapper-projecting {
       display: flex;
@@ -313,7 +373,8 @@
       row-gap: 10px;
       column-gap: 10px;
       @media (max-width: $pc-m) {
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
       }
       @media (max-width: $phone-l) {
         margin-bottom: 20px;
