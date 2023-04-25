@@ -2,131 +2,126 @@
 @import "./template";
 
 // Author: Olga
+// Refactored by Pavel
 
-.main__map-box {
-    @media (max-width: 480px) {
+.contacts-info-block {
+  display: flex;
+  column-gap: 10px;
+  &__icon {
+    width: 21px;
+    height: 21px;
+  }
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    .contacts-info-block__headline {
+      font-family: $font;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: $text-dark-color;
+    }
+    .contacts-info-block__description {
+      font-family: $font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      color: $text-gray-color;
+    }
+  }
+}
+
+.map-box {
+  position: relative;
+  height: 663px;
+  background-color: #f1f4f8;
+  @media (max-width: $tablet-l) {
+    height: auto;
+    padding-block: 12%;
+    padding-inline: 20px;
+  }
+  &__all-info-wrapper {
+    max-width: 693px;
+    width: 100%;
+    position: absolute;
+    top: 115px;
+    left: 8.33%;
+    background-color: $text-light-color;
+    @media (max-width: $laptop-l) {
+      max-width: 450px;
+      top: 95px;
+    }
+    @media (max-width: $tablet-l) {
+      position: static;
+      margin: 0 auto;
+    }
+    .map-box__headlines-and-info-wrapper {
+      padding: 35px 47px;
+      @media (max-width: $laptop-l) {
+        padding: 15px 20px;
+      }
+      .map-box__headline {
+        font-family: $font;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 56px;
+        color: $text-dark-color;
+        @media (max-width: $phone-l) {
+          font-size: 30px;
+          line-height: 37px;
+        }
+      }
+      .map-box__haedline-info-site {
+        margin-bottom: 14px;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        color: $btn-link-dark-color;
+        @media (max-width: $phone-l) {
+          font-size: 24px;
+          line-height: 31px;
+        }
+      }
+      .map-box__contacts-wrapper {
+        display: grid;
+        row-gap: 30px;
+        column-gap: 30px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 342px 1fr;
+        @media (max-width: $laptop-l) {
+          row-gap: 10px;
+          column-gap: 10px;
+          grid-template-rows: 3fr 2fr 2fr 2fr;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+  &__socials-btn-wrapper {
+    padding: 18px 45px;
+    @media (max-width: $laptop-l) {
+      padding: 12px 30px;
+    }
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    .map-box__socials-icons-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 24px;
+      @media (max-width: $phone-l) {
+        display: none;
+      }
+    }
+    .map-box__btn-make-request {
+      @include default-btn(214px, $text-light-color, $btn-link-dark-color);
+    }
+  }
+  &__map {
+    @media (max-width: $tablet-l) {
       display: none;
     }
-    .main__map {
-      position: relative;
-    }
-    .main__map-contacts {
-      margin-inline: auto;
-      background-color: $text-light-color;
-      font-family: $font;
-      max-width: 650px;
-      padding: 40px;
-      position: absolute;
-      top: 115px;
-      left: 160px;
-      z-index: 2;
-      @media (max-width: 1900px) {
-        max-width: 33%;
-        top: 100px;
-        left: 140px;
-      }
-      @media (max-width: 1400px) {
-        padding: 30px;
-        top: 25px;
-        left: 25px;
-      }
-      @media (max-width: 1024px) {
-        max-width: 50%;
-        top: 65px;
-      }
-      @media (max-width: 640px) {
-        max-width: 70%;
-      }
-      .main__map-contacts-all {
-        padding-bottom: 14px;
-        @media (max-width: 1024px) {
-          display: none;
-        }
-        .main__map-contacts-questions {
-          font-weight: 700;
-          font-size: 45px;
-          line-height: 56px;
-          color: $text-dark-color;
-          @media (max-width: 1400px) {
-            font-size: 35px;
-            line-height: 40px;
-          }
-        }
-        .main__map-contacts-email {
-          font-weight: 700;
-          font-size: 35px;
-          line-height: 46px;
-          color: $btn-link-dark-color;
-          @media (max-width: 1400px) {
-            font-size: 30px;
-          }
-        }
-      }
-      .main__map-contacts-all-info {
-        display: grid;
-        grid-template-columns: 300px 3fr;
-        grid-template-rows: 100px 100px 50px;
-        gap: 15px;
-        @media (max-width: 1900px) {
-          grid-template-columns: 50% 50%;
-        }
-        @media (max-width: 1400px) {
-          grid-template-columns: none;
-          grid-template-rows: none;
-        }
-        .main__map-contacts1,
-        .main__map-contacts2 {
-          width: 300px;
-          display: flex;
-        }
-        .main__map-contactsh2 {
-          font-weight: 700;
-          font-size: 20px;
-          color: $text-dark-color;
-          padding-bottom: 15px;
-        }
-        p {
-          @include default-p($text-blue-color);
-          color: #949393;
-        }
-        .main__map-contactsh3 {
-          font-weight: 700;
-          font-size: 20px;
-          color: $text-dark-color;
-          padding-bottom: 15px;
-        }
-      }
-      .main__map-contacts1-img,
-      .main__map-contacts2-img {
-        .img {
-          padding-right: 10px;
-        }
-      }
-    }
   }
-  .main__map-request {
-    margin-inline: auto;
-    background-color: $text-light-color;
-    font-family: $font;
-    width: 550px;
-    display: flex;
-    flex: 0 1 50%;
-    justify-content: space-between;
-    @media (max-width: 1900px) {
-      width: 100%;
-    }
-    .main__map-request-icons {
-      img {
-        padding-right: 15px;
-      }
-    }
-  }
-  .main__map-request-btn {
-    .main__drilling-work-inform-bt-btn {
-      @include default-btn(237px, $text-light-color, $btn-link-dark-color, 0px);
-      padding: 15px;
-      font-weight: 700;
-      font-size: 18px;
-    }
-  }
-  
+}
