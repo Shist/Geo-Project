@@ -5,205 +5,128 @@
 @import "../globalStyle/footer";
 
 // Author: Olga
+// Refactored by Pavel
 
-.global-container {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f1f4f8;
-}
-.main__services {
-  font-family: $font;
-  min-height: 420px;
-  background-image: url(../../images/services/bg-machines.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-inline: 20px;
-  @media (max-width: 480px) {
-    min-height: 0;
-  }
-  .main__services-title {
-    font-weight: 700;
-    font-size: 58px;
-    text-align: center;
-    color: $text-light-color;
-    padding: 107px 0 31px 0;
-    @media (max-width: 1024px) {
-      padding: 77px 0 51px 0;
-    }
-    @media (max-width: 864px) {
-      font-size: 45px;
-    }
-    @media (max-width: 480px) {
-      font-size: 35px;
-      padding-top: 30px;
-      padding-bottom: 15px;
-    }
-    @media (max-width: 360px) {
-      font-size: 25px;
+.work-card {
+  padding-block: 84px;
+  background: #f1f4f8;
+  &_reverse {
+    background: url(../../images/services/crystal-background.png);
+    background-size: cover;
+    .work-card__general-wrapper {
+      @media (max-width: $pc-s) {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+        align-items: center;
+      }
     }
   }
-  .main__services-title-text {
-    margin-inline: auto;
-    @include default-p($text-light-color);
-    max-width: 892px;
-    text-align: center;
-    @media (max-width: 1400px) {
-      font-size: 30px;
-      line-height: 45px;
-      max-width: none;
+  &__general-wrapper {
+    @extend %default-wrapper;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 65px;
+    column-gap: 20px;
+    @media (max-width: $pc-s) {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
     }
-    @media (max-width: 1024px) {
-      line-height: 35px;
+    .work-card__img-wrapper {
+      flex-basis: 47%;
+      .work-card__img {
+        max-width: 751px;
+        &_less {
+          max-width: 740px;
+        }
+        width: 100%;
+        height: max-content;
+      }
     }
-    @media (max-width: 864px) {
-      line-height: 30px;
-      font-size: 25px;
-    }
-    @media (max-width: 480px) {
-      font-size: 20px;
-      padding-bottom: 30px;
-    }
-    @media (max-width: 360px) {
-      font-size: 15px;
-      line-height: 18px;
-    }
-  }
-}
-.default-wrapper {
-  @extend %default-wrapper;
-  display: flex;
-  justify-content: center;
-  @media (max-width: 1400px) {
-    flex-wrap: wrap;
-  }
-}
-.main__drilling-work {
-  display: flex;
-  justify-content: space-between;
-  flex: 0 1 50%;
-  background-color: #f1f4f8;
-  @media (max-width: 1400px) {
-    flex-wrap: wrap;
-    flex: 0 1 100%;
-    justify-content: center;
-  }
-}
-.main__drilling-work2 {
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-  background-image: url(../../images/services/crystal-background.png);
-  img {
-    padding: 80px 0px;
-  }
-}
-.main__drilling-work-foto {
-  img {
-    padding: 80px 60px 80px 40px;
-    @media (max-width: 1400px) {
-      padding: 40px;
-      padding-top: 60px;
-    }
-    @media (max-width: 768px) {
-      max-width: 100%;
-    }
-    @media (max-width: 480px) {
-      padding: 10px;
+    .work-card__info-wrapper {
+      flex-basis: 49%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      row-gap: 20px;
+      @media (max-width: $pc-s) {
+        align-items: center;
+        text-align: center;
+      }
+      .work-card__headline {
+        padding-left: 10px;
+        @media (max-width: $pc-s) {
+          border-left: none;
+          padding-left: 0;
+        }
+        @include default-h($text-dark-color);
+        @media (max-width: $phone-l) {
+          font-size: 30px;
+          line-height: 31px;
+        }
+        @media (max-width: $phone-m) {
+          font-size: 28px;
+          line-height: 29px;
+        }
+      }
+      .work-card__text {
+        padding-left: 10px;
+        @include default-p($text-blue-color);
+      }
+      .work-card__btn {
+        @include default-btn(237px, $text-light-color, $btn-link-dark-color);
+        display: inline-block;
+        text-decoration: none;
+      }
     }
   }
 }
-.main__drilling-work-foto2 {
-  @media (max-width: 1400px) {
-    order: -1;
-  }
-  img {
-    padding: 80px 0px;
-    @media (max-width: 1400px) {
-      padding: 40px;
-    }
-    @media (max-width: 768px) {
-      max-width: 100%;
-    }
-    @media (max-width: 480px) {
-      padding: 10px;
-    }
-  }
-}
-.main__drilling-work-inform-text {
-  max-width: 790px;
-  padding: 80px 0px 0px 0px;
-  @media (max-width: 1400px) {
-    text-align: center;
-    padding: 0;
+
+.main {
+  .global-container {
+    max-width: 1920px;
     width: 100%;
-  }
-}
-.main__drilling-work-inform-text2 {
-  padding: 80px 60px 0px 0px;
-  max-width: 790px;
-  @media (max-width: 1400px) {
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-.main__drilling-work-inform-text-h2 {
-  @include default-h($text-dark-color);
-  padding-bottom: 15px;
-  @media (max-width: 1400px) {
-    padding: 0 40px 30px 40px;
-  }
-  @media (max-width: 864px) {
-    font-size: 40px;
-  }
-  @media (max-width: 576px) {
-    font-size: 30px;
-  }
-  @media (max-width: 480px) {
-    padding: 0 0 10px 0;
-    font-size: 25px;
-  }
-  @media (max-width: 360px) {
-    font-size: 20px;
-    padding: 0;
-  }
-  @media (max-width: 320px) {
-    font-size: 18px;
-    line-height: 35px;
-  }
-}
-.main__drilling-work-inform-text-p {
-  @include default-p($text-blue-color);
-  padding-bottom: 30px;
-  @media (max-width: 1400px) {
-    padding: 0 40px 30px 40px;
-  }
-  @media (max-width: 480px) {
-    display: none;
-  }
-}
-.main__drilling-work-inform-bt {
-  @media (max-width: 1400px) {
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  @media (max-width: 480px) {
-    padding-bottom: 15px;
-  }
-  @media (max-width: 360px) {
-    padding-bottom: 5px;
-  }
-  .main__drilling-work-inform-bt-btn {
-    @include default-btn(237px, $text-light-color, $btn-link-dark-color, 0px);
-    @media (max-width: 480px) {
-      padding-block: 8px 8px;
-      max-width: 200px;
-      line-height: 20px;
+    margin: 0 auto;
+    background-color: #f1f4f8;
+    .main__services {
+      font-family: $font;
+      min-height: 420px;
+      background-image: url(../../images/services/bg-machines.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-inline: 20px;
+      .main__services-title {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 55px;
+        text-align: center;
+        color: $text-light-color;
+        padding: 107px 0 31px 0;
+        @media (max-width: $tablet-l) {
+          font-size: 38px;
+          line-height: 35px;
+        }
+      }
+      .main__services-title-text {
+        margin-inline: auto;
+        @include default-p($text-light-color);
+        max-width: 892px;
+        text-align: center;
+        @media (max-width: $tablet-l) {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
     }
-    @media (max-width: 360px) {
-      font-size: small;
+    .main__work-cards-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (max-width: 1660px) {
+        padding-inline: 30px;
+      }
     }
   }
 }
