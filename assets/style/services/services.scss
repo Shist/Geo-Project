@@ -132,7 +132,7 @@
   }
 }
 .main__drilling-work-inform-text {
-  width: 790px;
+  max-width: 790px;
   padding: 80px 0px 0px 0px;
   @media (max-width: 1400px) {
     text-align: center;
@@ -142,7 +142,7 @@
 }
 .main__drilling-work-inform-text2 {
   padding: 80px 60px 0px 0px;
-  width: 790px;
+  max-width: 790px;
   @media (max-width: 1400px) {
     padding: 0;
     width: 100%;
