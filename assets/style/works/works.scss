@@ -57,43 +57,38 @@
   }
   .main__wrapper {
     @extend %default-wrapper;
+    @media (max-width: 1650px) {
+      padding-inline: 20px;
+    }
     .main__wrapper-common {
       margin-bottom: 40px;
       display: flex;
       justify-content: space-between;
+      column-gap: 20px;
       @media (max-width: $pc-m) {
-        margin-left: 20px;
-        margin-right: 20px;
         width: 100%;
-
-        @media (max-width: $laptop-l) {
-          min-height: 439px;
-          width: 100%;
-          align-items: start;
-          justify-content: space-between;
-          margin-bottom: 15px;
-        }
-        @media (max-width: $phone-m) {
-          margin-left: 5px;
-          margin-right: 5px;
-        }
+      }
+      @media (max-width: $laptop-l) {
+        flex-direction: column-reverse;
+        row-gap: 5px;
+        align-items: center;
+      }
+      @media (max-width: $phone-m) {
+        margin-left: 5px;
+        margin-right: 5px;
       }
       .main__wrapper-common-picture {
         height: max-content;
-        @media (max-width: $pc-m) {
-          max-width: 40%;
-          margin-right: 20px;
-        }
-
+        max-width: 47%;
         @media (max-width: $laptop-l) {
-          width: 30%;
-        }
-        @media (max-width: $phone-l) {
-          display: none;
+          max-width: 100%;
         }
       }
       .main__wrapper-common-text {
         max-width: 800px;
+        @media (max-width: $laptop-l) {
+          max-width: none;
+        }
       }
       .main__wrapper-common-text-paragrph {
         padding-inline: 10px;
@@ -110,10 +105,6 @@
       font-size: 32px;
       line-height: 28px;
       color: $text-black-color;
-      @media (max-width: $pc-m) {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
       @media (max-width: $phone-l) {
         margin-top: 20px;
       }
@@ -139,13 +130,11 @@
     }
   }
   .main__wrapper-common-best {
-    max-width: 1420px;
+    max-width: 1480px;
     min-height: 98px;
     display: flex;
-    @media (max-width: $pc-m) {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+    flex-wrap: wrap;
+    column-gap: 20px;
     @media (max-width: $phone-m) {
       flex-wrap: wrap;
     }
@@ -219,11 +208,19 @@
     @media (max-width: $phone-m) {
       margin-bottom: 5px;
     }
-    .main__wrapper-certificates-picture {
-      @media (max-width: $pc-m) {
-        display: flex;
-        margin: 0 auto;
-        width: 70%;
+    .main__wrapper-certificates-image {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .main__wrapper-certificates-picture {
+        @media (max-width: $pc-m) {
+          display: flex;
+          margin: 0 auto;
+        }
+        @media (max-width: $laptop-l) {
+          width: 100%;
+          height: auto;
+        }
       }
     }
     .main__wrapper-certificates-common {
@@ -245,11 +242,14 @@
   .main__wrapper-common-why {
     min-height: 432px;
     display: flex;
+    @media (max-width: $pc-m) {
+      flex-wrap: wrap;
+    }
+    justify-content: center;
+    column-gap: 10px;
     width: 100%;
     margin-bottom: 35px;
     @media (max-width: $pc-m) {
-      margin-left: 20px;
-      margin-right: 20px;
       justify-content: center;
       align-items: center;
       margin-bottom: 5px;
@@ -259,34 +259,16 @@
       margin-right: 5px;
     }
     .main__wrapper-common-why-picture {
-      @media (max-width: $laptop-l) {
-        width: 70%;
-      }
-      @media (max-width: $phone-l) {
-        display: none;
-        width: 100%;
-      }
       .main__wrapper-common-why-pic {
-        @media (max-width: $pc-m) {
-          width: 80%;
-        }
-        @media (max-width: $laptop-l) {
-          width: 70%;
-        }
-        @media (max-width: $phone-l) {
-          display: none;
-          width: 100%;
-        }
+        width: 100%;
+        height: auto;
       }
     }
     .main__wrapper-common-why-text {
       margin-top: 55px;
       width: 50%;
       @media (max-width: $pc-m) {
-        margin-top: 20px;
-      }
-      @media (max-width: $laptop-l) {
-        width: 50%;
+        width: 100%;
         margin-top: 20px;
       }
       @media (max-width: $phone-l) {
@@ -296,21 +278,20 @@
         margin-bottom: 44px;
         margin-top: 20px;
         @media (max-width: $pc-m) {
-          margin-bottom: 20px;
+          text-align: center;
         }
         @media (max-width: $phone-m) {
           font-weight: 700;
           font-size: 25px;
           line-height: 26px;
         }
-        @media (max-width: $phone-m) {
-          margin: 5px 0 5px 0;
-        }
       }
       .main__wrapper-common-best-wrap {
         display: flex;
         flex-wrap: wrap;
-
+        @media (max-width: $pc-m) {
+          justify-content: center;
+        }
         .main__wrapper-common-best-item {
           display: flex;
           justify-content: start;
@@ -367,29 +348,18 @@
     }
     .main__wrapper-projecting {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 56px;
       flex-wrap: wrap;
-      row-gap: 10px;
-      column-gap: 10px;
-      @media (max-width: $pc-m) {
-        justify-content: space-between;
-        align-items: center;
-      }
+      row-gap: 20px;
+      column-gap: 20px;
       @media (max-width: $phone-l) {
         margin-bottom: 20px;
       }
       .main__wrapper-projecting-item {
-        @media (max-width: $phone-l) {
-          width: 300px;
-        }
         .main__wrapper-projecting-item-img {
-          @media (max-width: $pc-m) {
-            margin-top: 10px;
-          }
-          @media (max-width: $phone-l) {
-            width: 300px;
-          }
+          width: 100%;
+          height: auto;
         }
       }
       .main__wrapper-projecting-item-text {
@@ -400,7 +370,7 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        padding-left: 32px;
+        padding: 20px 16px 28px 32px;
         .main__wrapper-projecting-item-date {
           background-color: #f1f4f8;
           font-family: $font;
