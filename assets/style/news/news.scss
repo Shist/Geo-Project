@@ -8,28 +8,50 @@
 
 .main {
   padding-block: 93px 115px;
+  @media (max-width: $laptop-l) {
+    padding-block: 30px 35px;
+  }
   background-color: #f1f4f8;
   .main__wrapper {
     @extend %default-wrapper;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 20px;
     @media (max-width: 1640px) {
       padding-inline: 20px;
     }
     .main__news-principal {
+      flex-grow: 1;
       flex-basis: 72.44%;
       padding: 46px 38px 66px 45px;
       background-color: $text-light-color;
+      @media (max-width: $laptop-l) {
+        padding: 23px 19px 33px 22px;
+      }
+      @media (max-width: $phone-l) {
+        padding: 10px 9px 15px 11px;
+      }
       .main__news-principalh2 {
-        margin-bottom: 31px;
         @include default-h($text-dark-color);
+        &_top {
+          margin-bottom: 31px;
+        }
       }
       .main__news-principal-information {
         display: flex;
         margin-bottom: 36px;
+        @media (max-width: $tablet-l) {
+          flex-direction: column;
+        }
         .main__news-principal-information-foto {
           max-width: 100%;
+          background-color: #f2f6fb;
+          text-align: center;
+          .main__news-principal-information-img {
+            @media (max-width: $phone-l) {
+              width: 100%;
+            }
+          }
         }
         .main__news-principal-information-info {
           display: flex;
@@ -53,6 +75,9 @@
             font-weight: 700;
             font-size: 36px;
             color: $text-black-color;
+            @media (max-width: $laptop-s) {
+              font-size: 24px;
+            }
           }
           .main__news-principal-information-text {
             @include default-p($text-blue-color);
@@ -60,13 +85,19 @@
         }
       }
       .main__news-principal-slide {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 9px;
+        @media (max-width: $phone-l) {
+          justify-content: center;
+        }
         &_first {
           margin-bottom: 56px;
         }
         .main__news-principal-slide-number {
           display: inline-block;
           border: 1px solid #9fb8d2;
-          margin-right: 9px;
           text-align: center;
         }
         .slide-number {
@@ -87,6 +118,7 @@
         }
       }
       .main__news-principal-slide-arrow {
+        margin-left: 4px;
         width: 7px;
         height: 12px;
         background: url(../../images/news/arrow.svg);
@@ -103,6 +135,7 @@
       margin-bottom: 36px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       .main__news-principal-loupe {
         width: 19px;
         height: 19px;
@@ -114,6 +147,9 @@
         &:hover {
           transform: scale(1.2);
         }
+        @media (max-width: $phone-l) {
+          display: none;
+        }
       }
     }
     .main__news-principal-ournews {
@@ -123,8 +159,20 @@
       grid-template-rows: auto;
       column-gap: 25px;
       row-gap: 28px;
+      @media (max-width: $laptop-l) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
       .main__news-principal-ournews-information {
         display: flex;
+        justify-content: center;
+        @media (max-width: $phone-l) {
+          flex-direction: column;
+          text-align: center;
+        }
+        .main__news-principal-ournews-information-foto {
+          background-color: #f2f6fb;
+        }
         .main__news-principal-ournews-information-info {
           display: flex;
           flex-direction: column;
@@ -132,6 +180,9 @@
           align-items: flex-start;
           background-color: #f2f6fb;
           padding: 21px 28px;
+          @media (max-width: $phone-l) {
+            align-items: center;
+          }
           .main__news-principal-ournews-information-date {
             margin-bottom: 12px;
             padding: 4px 7px;
@@ -165,6 +216,9 @@
       justify-content: flex-start;
       row-gap: 50px;
       background-color: $text-light-color;
+      @media (max-width: $pc-m) {
+        display: none;
+      }
     }
     .main__news-additional {
       display: flex;
