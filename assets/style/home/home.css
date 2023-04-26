@@ -1455,11 +1455,11 @@
   height: -moz-max-content;
   height: max-content;
 }
-.global-container .main__container .map-container {
+.global-container .main__container .main__map-box {
   margin-bottom: 135px;
 }
 @media (max-width: 1024px) {
-  .global-container .main__container .map-container {
+  .global-container .main__container .main__map-box {
     margin-bottom: 90px;
   }
 }
