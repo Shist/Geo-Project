@@ -543,6 +543,9 @@
               font-size: 20px;
               line-height: 27px;
               color: $text-light-color;
+              &_bold {
+                font-weight: bold;
+              }
             }
           }
           .main__questions-form {

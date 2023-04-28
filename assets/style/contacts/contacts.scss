@@ -1,6 +1,75 @@
 @import "../globalStyle/vars";
 @import "../globalStyle/template";
 @import "../globalStyle/header";
+@import "../globalStyle/maps";
 @import "../globalStyle/footer";
 
-// Author: nobody yet
+// Author: Pavel
+
+.main {
+  padding-block: 117px 88px;
+  @media (max-width: $laptop-l) {
+    padding-block: 59px 44px;
+  }
+  @media (max-width: $tablet-l) {
+    padding-block: 30px 22px;
+  }
+  background-color: #f1f4f8;
+  &__container {
+    .main__all-questions-wrapper {
+      .main__headline-and-socials-wrapper {
+        .main__headline {
+          &_blue {
+          }
+        }
+        .main__socials-icons-wrapper {
+          .main__link-to-socials {
+            .main__link-img {
+            }
+          }
+        }
+      }
+      .main__contacts-wrapper {
+      }
+    }
+    .main__map-box {
+      margin-bottom: 79px;
+      @media (max-width: $laptop-l) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet-l) {
+        padding-block: 20px;
+      }
+    }
+    .main__questions-wrapper {
+      .main__questions-headline {
+      }
+      .main__questions-info-form-wrapper {
+        .main__questions-info-wrapper {
+          .main__questions-text {
+          }
+          .main__questions-mail-phone {
+            &_bold {
+            }
+          }
+        }
+      }
+      .main__questions-form {
+        .main__form-name-tel-wrapper {
+          .main__form-input-name {
+          }
+          .main__form-input-phone {
+          }
+        }
+        .main__form-textarea {
+        }
+        .main__form-btn-info-wrapper {
+          .main__form-submit-btn {
+          }
+          .main__form-btn-note {
+          }
+        }
+      }
+    }
+  }
+}

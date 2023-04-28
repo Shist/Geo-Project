@@ -1531,6 +1531,9 @@
   line-height: 27px;
   color: white;
 }
+.global-container .main__container .main__questions-wrapper .main__questions-info-form-wrapper .main__questions-info-wrapper .main__questions-mail-phone_bold {
+  font-weight: bold;
+}
 .global-container .main__container .main__questions-wrapper .main__questions-info-form-wrapper .main__questions-form {
   flex-basis: 43%;
   display: flex;
