@@ -54,18 +54,66 @@
                 </div>
               </div>
               <div class="header__white-vert-line"></div>
-              <button class="header__search-btn"></button>
-              <div class="header__language-wrapper">
+              <a class="header__search-link-btn" href="./search.html"></a>
+              <div class="header__language-wrapper" id="curr-language-wrapper">
                 <img
-                  src="./assets/images/global/header/rus.svg"
+                  src="./assets/images/global/header/ru.png"
                   alt="russian"
                   class="header__language-flag-img"
+                  id="curr-language-img"
                 />
                 <div class="header__select-language-wrapper">
-                  <span class="header__curr-language">Русский</span>
-                  <button class="header__choose-language-btn"></button>
+                  <span class="header__curr-language" id="curr-language-text"
+                    >RU</span
+                  >
+                  <button
+                    class="header__choose-language-btn"
+                    id="arrow-img"
+                  ></button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="header__languages-list" id="languages-list">
+            <div class="header__language-item-wrapper" id="language-en-wrapper">
+              <img
+                src="./assets/images/global/header/en.png"
+                alt="Английский (Великобритания)"
+                class="header__language-item-img"
+              />
+              <span class="header__language-item-text">Английский (EN)</span>
+            </div>
+            <div class="header__language-item-wrapper" id="language-us-wrapper">
+              <img
+                src="./assets/images/global/header/us.png"
+                alt="Английский (США)"
+                class="header__language-item-img"
+              />
+              <span class="header__language-item-text">Английский (US)</span>
+            </div>
+            <div class="header__language-item-wrapper" id="language-by-wrapper">
+              <img
+                src="./assets/images/global/header/by.png"
+                alt="Белорусский"
+                class="header__language-item-img"
+              />
+              <span class="header__language-item-text">Белорусский (BY)</span>
+            </div>
+            <div class="header__language-item-wrapper" id="language-kz-wrapper">
+              <img
+                src="./assets/images/global/header/kz.png"
+                alt="Казахский"
+                class="header__language-item-img"
+              />
+              <span class="header__language-item-text">Казахский (KZ)</span>
+            </div>
+            <div class="header__language-item-wrapper" id="language-ru-wrapper">
+              <img
+                src="./assets/images/global/header/ru.png"
+                alt="Русский"
+                class="header__language-item-img"
+              />
+              <span class="header__language-item-text">Русский (RU)</span>
             </div>
           </div>
         </div>
@@ -569,6 +617,7 @@
         </div>
       </footer>
       <script src="./assets/scripts/toggleBurgerMenu.js"></script>
+      <script src="./assets/scripts/toggleLanguagesMenu.js"></script>
     </div>
   </body>
 </html>
