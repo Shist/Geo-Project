@@ -12,6 +12,7 @@
     z-index: 10;
   }
   &__container {
+    position: relative;
     @extend %default-wrapper;
     padding-block: 15px;
     @media (max-width: 1640px) {
@@ -30,7 +31,6 @@
       justify-content: center;
     }
     @media (max-width: $tablet-l) {
-      position: relative;
       justify-content: space-between;
     }
     .header__logo {
@@ -190,9 +190,22 @@
           }
         }
         .header__language-wrapper {
+          max-width: 80px;
+          width: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
+          column-gap: 8px;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            transform: scale(1.2);
+            .header__select-language-wrapper {
+              .header__curr-language {
+                color: $link-active-color;
+              }
+            }
+          }
           .header__language-flag-img {
             width: 16px;
             height: 16px;
@@ -202,6 +215,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            column-gap: 6px;
             .header__curr-language {
               margin-right: 6px;
               font-family: $font;
@@ -216,13 +230,43 @@
               background: url(../../images/global/header/arrow.svg);
               background-size: cover;
               border: none;
-              cursor: pointer;
-              transition: 0.3s;
-              &:hover {
-                transform: scale(1.5);
-              }
             }
           }
+        }
+      }
+    }
+    .header__languages-list {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      right: 0;
+      max-width: 250px;
+      width: 100%;
+      flex-direction: column;
+      .header__language-item-wrapper {
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 30px;
+        background-image: url(../../images/global/header/bg.png);
+        background-size: cover;
+        cursor: pointer;
+        &:hover > .header__language-item-text {
+          transform: scale(1.2);
+          color: $link-active-color;
+        }
+        .header__language-item-img {
+          width: 24px;
+          height: 24px;
+        }
+        .header__language-item-text {
+          font-family: $font;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $text-light-color;
+          transition: 0.3s;
         }
       }
     }

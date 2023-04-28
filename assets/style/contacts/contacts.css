@@ -156,6 +156,7 @@
   }
 }
 .header__container {
+  position: relative;
   padding-block: 15px;
   display: flex;
   justify-content: space-between;
@@ -180,7 +181,6 @@
 }
 @media (max-width: 768px) {
   .header__container {
-    position: relative;
     justify-content: space-between;
   }
 }
@@ -365,9 +365,21 @@
   transform: scale(1.5);
 }
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper {
+  max-width: 80px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper:hover {
+  transform: scale(1.2);
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper:hover .header__select-language-wrapper .header__curr-language {
+  color: #ffec8b;
 }
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__language-flag-img {
   width: 16px;
@@ -378,6 +390,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
 }
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__curr-language {
   margin-right: 6px;
@@ -393,11 +407,42 @@
   background: url(../../images/global/header/arrow.svg);
   background-size: cover;
   border: none;
-  cursor: pointer;
-  transition: 0.3s;
 }
-.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn:hover {
-  transform: scale(1.5);
+.header__container .header__languages-list {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  max-width: 250px;
+  width: 100%;
+  flex-direction: column;
+}
+.header__container .header__languages-list .header__language-item-wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  background-image: url(../../images/global/header/bg.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.header__container .header__languages-list .header__language-item-wrapper:hover > .header__language-item-text {
+  transform: scale(1.2);
+  color: #ffec8b;
+}
+.header__container .header__languages-list .header__language-item-wrapper .header__language-item-img {
+  width: 24px;
+  height: 24px;
+}
+.header__container .header__languages-list .header__language-item-wrapper .header__language-item-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  transition: 0.3s;
 }
 
 /* font "Roboto", normal, 400 */
