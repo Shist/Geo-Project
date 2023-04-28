@@ -502,7 +502,6 @@
 
 .map-box {
   position: relative;
-  height: 663px;
   background-color: #f1f4f8;
 }
 @media (max-width: 768px) {
@@ -1532,7 +1531,7 @@
   color: white;
 }
 .global-container .main__container .main__questions-wrapper .main__questions-info-form-wrapper .main__questions-info-wrapper .main__questions-mail-phone_bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 .global-container .main__container .main__questions-wrapper .main__questions-info-form-wrapper .main__questions-form {
   flex-basis: 43%;
