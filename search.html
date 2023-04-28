@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/reset/reset.css" />
-    <link rel="stylesheet" href="./assets/style/404/404.css" />
-    <title>404</title>
-    <!-- Author: Mila -->
+    <link rel="stylesheet" href="./assets/style/search/search.css" />
+    <title>Search</title>
+    <!-- Author: Pavel -->
   </head>
-  <body>
+  <body class="body">
     <div class="global-container">
       <header class="header">
         <div class="header__container">
@@ -54,7 +54,6 @@
                 </div>
               </div>
               <div class="header__white-vert-line"></div>
-              <a class="header__search-link-btn" href="./search.html"></a>
               <div class="header__language-wrapper">
                 <img
                   src="./assets/images/global/header/rus.svg"
@@ -71,7 +70,26 @@
         </div>
       </header>
       <main class="main">
-        <!-- Start your work here ... -->
+        <div class="main__container">
+          <div class="main__search-wrapper">
+            <form action="#" class="main__search-form">
+              <h1 class="main__search-headline">Поиск по сайту</h1>
+              <div class="main__search-line-wrapper">
+                <input
+                  type="text"
+                  name="search-input"
+                  placeholder="Введите ваш запрос"
+                  required
+                  class="main__form-search-text"
+                />
+                <div class="main__form-search-btn-wrapper">
+                    <button class="main__form-search-btn"></button>
+                </div>
+              </div>
+              <button class="main__form-submit-query-btn">Искать</button>
+            </form>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__container">

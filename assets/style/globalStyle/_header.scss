@@ -176,7 +176,8 @@
           height: 17px;
           background-color: $text-light-color;
         }
-        .header__search-btn {
+        .header__search-link-btn {
+          text-decoration: none;
           width: 16px;
           height: 16px;
           background: url(../../images/global/header/search-loupe.svg);
