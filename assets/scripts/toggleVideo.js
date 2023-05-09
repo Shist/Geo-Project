@@ -1,14 +1,14 @@
-function clickOnVideo() {
+const clickOnVideo = () => {
+  const startBtn = document.querySelector(".main__video-click-btn");
+  const videoDemo = document.querySelector(".main__video");
   if (videoDemo.paused) {
-    startBtn.style.display = "none";
+    startBtn.classList.add("hidden-element");
     videoDemo.play();
   } else {
     videoDemo.pause();
-    startBtn.style.display = "inline-block";
+    startBtn.classList.remove("hidden-element");
   }
-}
+};
 
-const startBtn = document.getElementById("video-start-btn");
-const videoDemo = document.getElementById("video-demo");
-startBtn.onclick = clickOnVideo;
-videoDemo.onclick = clickOnVideo;
+const videoWrapper = document.querySelector(".main__video-wrapper");
+videoWrapper.onclick = clickOnVideo;

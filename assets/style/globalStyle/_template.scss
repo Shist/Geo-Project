@@ -7,6 +7,26 @@
   margin: 0 auto;
 }
 
+// This class is needed to hide elements (by adding this class)
+.hidden-element {
+  display: none;
+}
+
+// This class is needed to make elements appear (by adding this class)
+.item-display-block {
+  display: block;
+}
+
+// This class is needed to make elements appear (by adding this class)
+.item-inline-block {
+  display: inline-block;
+}
+
+// This class is needed to make elements appear (by adding this class)
+.item-flex {
+  display: flex;
+}
+
 // Default settings of wrapper for content (margin-bottom is possible)
 %default-wrapper {
   max-width: 1600px;
