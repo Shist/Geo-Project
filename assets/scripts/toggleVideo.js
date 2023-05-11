@@ -1,4 +1,4 @@
-document.querySelector(".main__video-wrapper").onclick = () => {
+document.querySelector(".main__video-wrapper").addEventListener("click", () => {
   const startBtn = document.querySelector(".main__video-click-btn");
   const videoDemo = document.querySelector(".main__video");
   if (videoDemo.paused) {
@@ -8,4 +8,4 @@ document.querySelector(".main__video-wrapper").onclick = () => {
     videoDemo.pause();
     startBtn.classList.remove("hidden-element");
   }
-};
+});
