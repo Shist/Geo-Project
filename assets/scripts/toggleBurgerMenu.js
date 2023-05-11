@@ -8,10 +8,11 @@ burgerMenuBtn.onclick = () => {
   }
 };
 const tabletL = 768;
-window.onresize = () => {
+window.addEventListener("resize", () => {
+  console.log("!!!");
   if (this.outerWidth > tabletL) {
     headerNavInfo.style.display = "flex";
   } else {
     headerNavInfo.style.display = "none";
   }
-}
+});

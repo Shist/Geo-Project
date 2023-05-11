@@ -21,30 +21,30 @@ currLanguageWrapper.onclick = () => {
 };
 
 const laptopL = 1024;
-window.onresize = () => {
+window.addEventListener("resize", () => {
   if (this.outerWidth < laptopL) {
     languagesList.style.display = "none";
     arrowImg.style.background = "url(./assets/images/global/header/arrow.svg)";
   }
-};
+});
 
 enWrapper.onclick = () => {
-    currLanguageImg.src = "./assets/images/global/header/en.png";
-    currLanguageText.textContent = "EN";
-}
+  currLanguageImg.src = "./assets/images/global/header/en.png";
+  currLanguageText.textContent = "EN";
+};
 usWrapper.onclick = () => {
-    currLanguageImg.src = "./assets/images/global/header/us.png";
-    currLanguageText.textContent = "US";
-}
+  currLanguageImg.src = "./assets/images/global/header/us.png";
+  currLanguageText.textContent = "US";
+};
 byWrapper.onclick = () => {
-    currLanguageImg.src = "./assets/images/global/header/by.png";
-    currLanguageText.textContent = "BY";
-}
+  currLanguageImg.src = "./assets/images/global/header/by.png";
+  currLanguageText.textContent = "BY";
+};
 kzWrapper.onclick = () => {
-    currLanguageImg.src = "./assets/images/global/header/kz.png";
-    currLanguageText.textContent = "KZ";
-}
+  currLanguageImg.src = "./assets/images/global/header/kz.png";
+  currLanguageText.textContent = "KZ";
+};
 ruWrapper.onclick = () => {
-    currLanguageImg.src = "./assets/images/global/header/ru.png";
-    currLanguageText.textContent = "RU";
-}
+  currLanguageImg.src = "./assets/images/global/header/ru.png";
+  currLanguageText.textContent = "RU";
+};
