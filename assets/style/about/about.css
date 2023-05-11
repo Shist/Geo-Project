@@ -64,6 +64,26 @@
   margin: 0 auto;
 }
 
+.hidden-element {
+  display: none !important;
+}
+
+.appeared-display-block {
+  display: block !important;
+}
+
+.appeared-inline-block {
+  display: inline-block !important;
+}
+
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
+}
+
 .main .main__container, .footer__container, .header__container {
   max-width: 1600px;
   width: 100%;
@@ -135,6 +155,26 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.hidden-element {
+  display: none !important;
+}
+
+.appeared-display-block {
+  display: block !important;
+}
+
+.appeared-inline-block {
+  display: inline-block !important;
+}
+
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .main .main__container, .footer__container, .header__container {
@@ -404,9 +444,14 @@
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn {
   width: 7px;
   height: 4px;
-  background: url(../../images/global/header/arrow.svg);
   background-size: cover;
   border: none;
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn_arrow-bottom {
+  background: url(../../images/global/header/arrow.svg);
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn_arrow-top {
+  background: url(../../images/global/header/arrow-reverse.svg);
 }
 .header__container .header__languages-list {
   display: none;
@@ -509,6 +554,26 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.hidden-element {
+  display: none !important;
+}
+
+.appeared-display-block {
+  display: block !important;
+}
+
+.appeared-inline-block {
+  display: inline-block !important;
+}
+
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .main .main__container, .footer__container, .header__container {
@@ -741,6 +806,26 @@
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+}
+
+.hidden-element {
+  display: none !important;
+}
+
+.appeared-display-block {
+  display: block !important;
+}
+
+.appeared-inline-block {
+  display: inline-block !important;
+}
+
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .main .main__container, .footer__container, .header__container {
