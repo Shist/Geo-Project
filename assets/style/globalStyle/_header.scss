@@ -227,9 +227,14 @@
             .header__choose-language-btn {
               width: 7px;
               height: 4px;
-              background: url(../../images/global/header/arrow.svg);
               background-size: cover;
               border: none;
+              &_arrow-bottom {
+                background: url(../../images/global/header/arrow.svg);
+              }
+              &_arrow-top {
+                background: url(../../images/global/header/arrow-reverse.svg);
+              }
             }
           }
         }
