@@ -1,4 +1,4 @@
-const clickOnVideo = () => {
+document.querySelector(".main__video-wrapper").onclick = () => {
   const startBtn = document.querySelector(".main__video-click-btn");
   const videoDemo = document.querySelector(".main__video");
   if (videoDemo.paused) {
@@ -9,6 +9,3 @@ const clickOnVideo = () => {
     startBtn.classList.remove("hidden-element");
   }
 };
-
-const videoWrapper = document.querySelector(".main__video-wrapper");
-videoWrapper.onclick = clickOnVideo;

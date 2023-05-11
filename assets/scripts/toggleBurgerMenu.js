@@ -1,18 +1,17 @@
-const headerNavInfo = document.getElementById("header-nav-info");
-const burgerMenuBtn = document.getElementById("burger-menu-btn");
-burgerMenuBtn.onclick = () => {
-  if (headerNavInfo.style.display === "flex") {
-    headerNavInfo.style.display = "none";
+const headerNavInfo = document.querySelector(".header__nav-info-wrapper");
+document.querySelector(".header__burger-menu-btn").onclick = () => {
+  if (window.getComputedStyle(headerNavInfo, null).display === "flex") {
+    headerNavInfo.classList.remove("appeared-flex");
+    headerNavInfo.classList.add("hidden-element");
   } else {
-    headerNavInfo.style.display = "flex";
+    headerNavInfo.classList.remove("hidden-element");
+    headerNavInfo.classList.add("appeared-flex");
   }
 };
 const tabletL = 768;
 window.addEventListener("resize", () => {
-  console.log("!!!");
   if (this.outerWidth > tabletL) {
-    headerNavInfo.style.display = "flex";
-  } else {
-    headerNavInfo.style.display = "none";
+    headerNavInfo.classList.remove("hidden-element");
+    headerNavInfo.classList.remove("appeared-flex");
   }
 });

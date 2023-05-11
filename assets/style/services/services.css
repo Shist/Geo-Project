@@ -65,19 +65,23 @@
 }
 
 .hidden-element {
-  display: none;
+  display: none !important;
 }
 
-.item-display-block {
-  display: block;
+.appeared-display-block {
+  display: block !important;
 }
 
-.item-inline-block {
-  display: inline-block;
+.appeared-inline-block {
+  display: inline-block !important;
 }
 
-.item-flex {
-  display: flex;
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .work-card__general-wrapper, .footer__container, .header__container {
@@ -154,19 +158,23 @@
 }
 
 .hidden-element {
-  display: none;
+  display: none !important;
 }
 
-.item-display-block {
-  display: block;
+.appeared-display-block {
+  display: block !important;
 }
 
-.item-inline-block {
-  display: inline-block;
+.appeared-inline-block {
+  display: inline-block !important;
 }
 
-.item-flex {
-  display: flex;
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .work-card__general-wrapper, .footer__container, .header__container {
@@ -544,19 +552,23 @@
 }
 
 .hidden-element {
-  display: none;
+  display: none !important;
 }
 
-.item-display-block {
-  display: block;
+.appeared-display-block {
+  display: block !important;
 }
 
-.item-inline-block {
-  display: inline-block;
+.appeared-inline-block {
+  display: inline-block !important;
 }
 
-.item-flex {
-  display: flex;
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .work-card__general-wrapper, .footer__container, .header__container {
@@ -792,19 +804,23 @@
 }
 
 .hidden-element {
-  display: none;
+  display: none !important;
 }
 
-.item-display-block {
-  display: block;
+.appeared-display-block {
+  display: block !important;
 }
 
-.item-inline-block {
-  display: inline-block;
+.appeared-inline-block {
+  display: inline-block !important;
 }
 
-.item-flex {
-  display: flex;
+.appeared-inline {
+  display: inline !important;
+}
+
+.appeared-flex {
+  display: flex !important;
 }
 
 .work-card__general-wrapper, .footer__container, .header__container {

@@ -9,22 +9,27 @@
 
 // This class is needed to hide elements (by adding this class)
 .hidden-element {
-  display: none;
+  display: none !important;
 }
 
 // This class is needed to make elements appear (by adding this class)
-.item-display-block {
-  display: block;
+.appeared-display-block {
+  display: block !important;
 }
 
 // This class is needed to make elements appear (by adding this class)
-.item-inline-block {
-  display: inline-block;
+.appeared-inline-block {
+  display: inline-block !important;
 }
 
 // This class is needed to make elements appear (by adding this class)
-.item-flex {
-  display: flex;
+.appeared-inline {
+  display: inline !important;
+}
+
+// This class is needed to make elements appear (by adding this class)
+.appeared-flex {
+  display: flex !important;
 }
 
 // Default settings of wrapper for content (margin-bottom is possible)
