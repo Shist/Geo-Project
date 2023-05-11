@@ -444,9 +444,14 @@
 .header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn {
   width: 7px;
   height: 4px;
-  background: url(../../images/global/header/arrow.svg);
   background-size: cover;
   border: none;
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn_arrow-bottom {
+  background: url(../../images/global/header/arrow.svg);
+}
+.header__container .header__nav-info-wrapper .header__info-wrapper .header__language-wrapper .header__select-language-wrapper .header__choose-language-btn_arrow-top {
+  background: url(../../images/global/header/arrow-reverse.svg);
 }
 .header__container .header__languages-list {
   display: none;
