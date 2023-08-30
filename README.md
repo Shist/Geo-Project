@@ -1,6 +1,9 @@
 # Geo-Project
-### This project is an implementation of the Meta web page layout that was designed here:
+### This project is an implementation of the web page layout that was designed here:
 ## https://www.figma.com/file/IKSfhA28EzMU2uikY9sxJn/Project---Geo?node-id=0%3A1&t=1CHS6JCVStrwsyGO-1
+---
+### This project is hosted using the Vecel.com platform, you can see how it works here:
+## https://shist-geo-project.vercel.app/
 ---
 ## Desk with tasks
 ## https://app.asana.com/0/1204401783346277/board
